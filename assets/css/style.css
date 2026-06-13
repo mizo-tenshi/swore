@@ -31,6 +31,7 @@ nav {
   align-items: center;
 }
 .nav-logo {
+  flex: 1;
   opacity: 0;
   animation: navFade 1s ease 3.2s forwards;
 }
@@ -57,6 +58,35 @@ nav {
 }
 .nav-links a:hover { color: #e8e0d0; }
 @keyframes navFade { to { opacity:1; } }
+
+/* ===== LANG SWITCH ===== */
+.lang-switch {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  opacity: 0;
+  animation: navFade 1s ease 3.4s forwards;
+}
+.lang-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  letter-spacing: .4em;
+  background: none;
+  border: none;
+  color: rgba(232,224,208,.35);
+  cursor: pointer;
+  padding: 0;
+  transition: color .3s;
+}
+.lang-btn.active { color: rgba(232,224,208,.85); }
+.lang-btn:hover  { color: rgba(232,224,208,.7); }
+.lang-sep {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  color: rgba(232,224,208,.2);
+}
 
 /* ===== HERO ===== */
 .hero {
@@ -175,8 +205,8 @@ nav {
 
 /* ===== MAIN MESSAGE ===== */
 .msg-sec {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--dark);
+  color: #e8e0d0;
   padding: 200px 0 180px;
   text-align: center;
 }
@@ -192,18 +222,18 @@ nav {
   letter-spacing: .2em;
   line-height: 1.7;
   margin-bottom: 80px;
-  color: var(--ink);
+  color: #e8e0d0;
 }
 .msg-body {
   font-size: 16px;
   line-height: 3;
-  color: #444;
+  color: rgba(232,224,208,.7);
   letter-spacing: .12em;
 }
 .msg-body .em {
   font-size: 1.35em;
   font-weight: 600;
-  color: var(--ink);
+  color: #e8e0d0;
   letter-spacing: .18em;
 }
 
@@ -257,8 +287,8 @@ nav {
 
 /* ===== CONCEPT ===== */
 .concept-sec {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--dark);
+  color: #e8e0d0;
   padding: 180px 0;
   text-align: center;
 }
@@ -270,9 +300,10 @@ nav {
 .concept-labels {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 80px;
   margin-bottom: 120px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .concept-labels span {
   font-family: 'Cormorant Garamond', serif;
@@ -285,6 +316,7 @@ nav {
   font-weight: 600;
   letter-spacing: .25em;
   margin-bottom: 80px;
+  color: #e8e0d0;
 }
 .specs-list {
   display: flex;
@@ -298,9 +330,10 @@ nav {
   padding: 36px 0;
   text-align: left;
   background: transparent;
+  align-items: center;
 }
 .spec-row + .spec-row {
-  border-top: 1px solid rgba(0,0,0,.08);
+  border-top: 1px solid rgba(232,224,208,.1);
 }
 .spec-row-label {
   font-family: 'Cormorant Garamond', serif;
@@ -308,17 +341,16 @@ nav {
   letter-spacing: .5em;
   text-transform: uppercase;
   color: #aaa;
-  padding-top: 4px;
 }
 .spec-row-body {
   font-size: 15px;
   line-height: 2.4;
-  color: #333;
+  color: rgba(232,224,208,.75);
 }
 .spec-row-body .em {
   font-size: 1.15em;
   font-weight: 600;
-  color: var(--ink);
+  color: #e8e0d0;
 }
 
 /* ===== PROOF ===== */
@@ -370,8 +402,8 @@ nav {
 
 /* ===== RELEASE ===== */
 .release-sec {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--dark);
+  color: #e8e0d0;
   padding: 200px 0;
   text-align: center;
 }
@@ -386,12 +418,13 @@ nav {
   letter-spacing: .18em;
   line-height: 1.5;
   margin-bottom: 40px;
+  color: #e8e0d0;
 }
 .release-sub {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(14px, 1.8vw, 18px);
   letter-spacing: .4em;
-  color: #999;
+  color: rgba(232,224,208,.5);
 }
 .release-link {
   display: inline-block;
@@ -399,15 +432,15 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(13px, 1.5vw, 16px);
   letter-spacing: .35em;
-  color: var(--ink);
+  color: var(--gold);
   text-decoration: none;
-  border-bottom: 1px solid rgba(14,14,14,.3);
+  border-bottom: 1px solid rgba(184,168,130,.4);
   padding-bottom: 4px;
   transition: border-color .3s, color .3s;
 }
 .release-link:hover {
-  color: var(--ink-soft);
-  border-color: var(--ink);
+  color: #e8e0d0;
+  border-color: rgba(232,224,208,.6);
 }
 
 /* ===== COMPANY ===== */
@@ -435,19 +468,24 @@ nav {
   margin-bottom: 72px;
 }
 .company-rows {
-  width: 480px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 720px;
   margin-bottom: 80px;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
 }
 .c-row {
   display: flex;
-  gap: 40px;
-  padding: 22px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   font-size: 14px;
   line-height: 1.9;
+  text-align: center;
 }
-.c-row + .c-row { border-top: 1px solid rgba(232,224,208,.1); }
 .c-label {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;

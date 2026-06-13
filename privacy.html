@@ -1,105 +1,225 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — SWORE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .privacy-page {
-      background: var(--light);
-      color: var(--text-dark);
-      min-height: 100svh;
-      padding: calc(var(--nav-h) + 80px) 48px 120px;
-    }
-    .privacy-inner {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    .privacy-inner h1 {
-      font-family: var(--font-serif);
-      font-size: 2rem;
-      font-weight: 300;
-      letter-spacing: 0.04em;
-      margin-bottom: 48px;
-    }
-    .privacy-inner p {
-      font-family: var(--font-jp);
-      font-size: 1rem;
-      line-height: 2;
-      color: var(--muted-light);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SWORE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .pp-wrap {
+    background: var(--dark);
+    color: #e8e0d0;
+    min-height: 100vh;
+    padding: 160px 48px 140px;
+  }
+  .pp-inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .pp-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 40px;
+  }
+  .pp-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 300;
+    letter-spacing: .12em;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    color: #e8e0d0;
+  }
+  .pp-rule {
+    width: 100%;
+    height: 1px;
+    background: rgba(232,224,208,.1);
+    border: none;
+    margin: 56px 0;
+  }
+  .pp-section {
+    margin-bottom: 56px;
+  }
+  .pp-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .45em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .pp-section p,
+  .pp-section li {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 14px;
+    line-height: 2.6;
+    color: rgba(232,224,208,.7);
+    letter-spacing: .06em;
+  }
+  .pp-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .pp-section ul li::before {
+    content: "— ";
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .pp-updated {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: .3em;
+    color: rgba(232,224,208,.3);
+    margin-top: 80px;
+    display: block;
+  }
+  .pp-back {
+    display: inline-block;
+    margin-bottom: 64px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    color: rgba(232,224,208,.4);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(232,224,208,.15);
+    padding-bottom: 2px;
+    transition: color .3s, border-color .3s;
+  }
+  .pp-back:hover {
+    color: rgba(232,224,208,.8);
+    border-color: rgba(232,224,208,.5);
+  }
+  @media (max-width: 700px) {
+    .pp-wrap { padding: 140px 24px 100px; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav scrolled" id="nav">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/images/logo.png" alt="SWORE" class="nav-logo-img logo-invert">
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html#collection">Collection</a></li>
-      <li><a href="index.html#story">Story</a></li>
-      <li><a href="index.html#footer">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="privacy-page">
-    <div class="privacy-inner">
-      <h1>Privacy Policy</h1>
-      <p>プライバシーポリシーは準備中です。</p>
-    </div>
+<!-- NAV -->
+<nav class="scrolled" style="border-bottom-color: rgba(232,224,208,.08);">
+  <div class="nav-logo" style="opacity:1;">
+    <img src="assets/images/logo.png" alt="SWORE">
   </div>
+  <ul class="nav-links" style="opacity:1;">
+    <li><a href="index.html#swore">SWORE</a></li>
+    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">Shop Now</a></li>
+  </ul>
+  <div class="lang-switch" style="opacity:1; flex:1; display:flex; justify-content:flex-end;">
+    <a href="index.html" style="font-family:'Cormorant Garamond',serif; font-size:10px; letter-spacing:.4em; color:rgba(232,224,208,.4); text-decoration:none; text-transform:uppercase; transition:color .3s;" onmouseover="this.style.color='rgba(232,224,208,.8)'" onmouseout="this.style.color='rgba(232,224,208,.4)'">← Home</a>
+  </div>
+</nav>
 
-  <!-- Footer -->
-  <footer class="footer" id="footer">
-    <div class="footer-top">
-      <img src="assets/images/logo.png" alt="SWORE" class="footer-logo logo-invert">
-      <p class="footer-tagline">Return to yourself.</p>
-    </div>
-    <div class="footer-grid">
-      <div class="footer-col">
-        <p class="footer-heading">Shop</p>
-        <ul>
-          <li><a href="index.html#collection">Collection</a></li>
-          <li><a href="index.html#collection">New Arrival</a></li>
-          <li><a href="#">Archive</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-heading">Brand</p>
-        <ul>
-          <li><a href="index.html#story">Story</a></li>
-          <li><a href="#">Craftsmanship</a></li>
-          <li><a href="#">Serial Numbers</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-heading">Info</p>
-        <ul>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p class="footer-heading">Follow</p>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Newsletter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 SWORE. All rights reserved.</p>
-    </div>
-  </footer>
+<div class="pp-wrap">
+  <div class="pp-inner">
 
-  <script src="assets/js/main.js"></script>
+    <span class="pp-label">Legal</span>
+    <h1 class="pp-title">Privacy Policy</h1>
+
+    <a class="pp-back" href="index.html">← Back to Home</a>
+
+    <div class="pp-section">
+      <h2>1. 基本方針</h2>
+      <p>SWORE（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、個人情報の保護に関する法律および関連法令を遵守し、適切な取り扱いと安全管理に努めます。</p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>2. 取得する情報</h2>
+      <p>当社は、サービス提供にあたり以下の情報を取得することがあります。</p>
+      <ul>
+        <li>氏名、住所、電話番号、メールアドレス等の連絡先情報</li>
+        <li>ご注文内容・取引履歴に関する情報</li>
+        <li>ウェブサイト閲覧履歴（Cookie等によるもの）</li>
+        <li>お問い合わせ内容</li>
+      </ul>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>3. 利用目的</h2>
+      <p>取得した個人情報は、以下の目的に限り利用します。</p>
+      <ul>
+        <li>商品の発送・アフターサービス対応</li>
+        <li>お問い合わせへの回答</li>
+        <li>新商品・イベント等のご案内（ご同意いただいた場合）</li>
+        <li>サービス改善・マーケティングのための統計的分析</li>
+      </ul>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>4. 第三者への提供</h2>
+      <p>当社は、法令に基づく場合または業務委託先への提供（配送業者等）を除き、お客様の同意なく個人情報を第三者に提供することはありません。</p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>5. 安全管理</h2>
+      <p>当社は、個人情報の漏洩・滅失・毀損を防止するため、適切な安全管理措置を講じます。個人情報を取り扱う従業者および委託先に対しても、必要かつ適切な監督を行います。</p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>6. Cookie の使用</h2>
+      <p>当ウェブサイトでは、閲覧利便性の向上およびアクセス解析のために Cookie を使用することがあります。ブラウザの設定により Cookie を無効にすることも可能ですが、一部機能が利用できなくなる場合があります。</p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>7. 開示・訂正・削除</h2>
+      <p>お客様は、当社が保有するご自身の個人情報について、開示・訂正・削除・利用停止を請求することができます。ご希望の場合は下記お問い合わせ先までご連絡ください。</p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>8. お問い合わせ</h2>
+      <p>個人情報の取り扱いに関するお問い合わせは、以下の窓口までお願いいたします。</p>
+      <p style="margin-top:16px;">
+        SWORE（MA株式会社）<br>
+        〒604-8404 京都府京都市中京区西ノ京<br>
+        Email：info@swore.jp
+      </p>
+    </div>
+
+    <hr class="pp-rule">
+
+    <div class="pp-section">
+      <h2>9. 改定</h2>
+      <p>本ポリシーは、法令の改正やサービス内容の変更に応じて予告なく改定することがあります。最新の内容は当ページにてご確認ください。</p>
+    </div>
+
+    <span class="pp-updated">最終更新：2026年6月</span>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img class="footer-logo" src="assets/images/logo.png" alt="SWORE">
+  <ul class="footer-nav">
+    <li><a href="index.html#swore">SWORE</a></li>
+    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">Shop Now</a></li>
+  </ul>
+  <div class="footer-policy"><a href="privacy.html">プライバシーポリシー</a></div>
+  <p class="footer-copy">© SWORE. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
