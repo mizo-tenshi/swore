@@ -6,12 +6,10 @@
 <title>Privacy Policy — SWORE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <style>
   .pp-wrap {
-    background: var(--dark);
-    color: #e8e0d0;
     min-height: 100vh;
     padding: 160px 48px 140px;
   }
@@ -21,10 +19,10 @@
   }
   .pp-label {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: .5em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: #888;
     display: block;
     margin-bottom: 40px;
   }
@@ -35,12 +33,12 @@
     letter-spacing: .12em;
     line-height: 1.5;
     margin-bottom: 80px;
-    color: #e8e0d0;
+    color: #fff;
   }
   .pp-rule {
     width: 100%;
     height: 1px;
-    background: rgba(232,224,208,.1);
+    background: rgba(255,255,255,.08);
     border: none;
     margin: 56px 0;
   }
@@ -49,19 +47,20 @@
   }
   .pp-section h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 400;
     letter-spacing: .45em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: #888;
     margin-bottom: 24px;
   }
   .pp-section p,
   .pp-section li {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px;
+    font-weight: 200;
     line-height: 2.6;
-    color: rgba(232,224,208,.7);
+    color: rgba(255,255,255,.6);
     letter-spacing: .06em;
   }
   .pp-section ul {
@@ -70,14 +69,14 @@
   }
   .pp-section ul li::before {
     content: "— ";
-    color: var(--gold);
+    color: #888;
     font-family: 'Cormorant Garamond', serif;
   }
   .pp-updated {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: .3em;
-    color: rgba(232,224,208,.3);
+    color: rgba(255,255,255,.2);
     margin-top: 80px;
     display: block;
   }
@@ -85,38 +84,29 @@
     display: inline-block;
     margin-bottom: 64px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: .4em;
     text-transform: uppercase;
-    color: rgba(232,224,208,.4);
+    color: #888;
     text-decoration: none;
-    border-bottom: 1px solid rgba(232,224,208,.15);
-    padding-bottom: 2px;
-    transition: color .3s, border-color .3s;
+    transition: color .4s;
   }
-  .pp-back:hover {
-    color: rgba(232,224,208,.8);
-    border-color: rgba(232,224,208,.5);
-  }
-  @media (max-width: 700px) {
-    .pp-wrap { padding: 140px 24px 100px; }
+  .pp-back:hover { color: #fff; }
+  @media (max-width: 768px) {
+    .pp-wrap { padding: 120px 24px 100px; }
   }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="scrolled" style="border-bottom-color: rgba(232,224,208,.08);">
-  <div class="nav-logo" style="opacity:1;">
-    <img src="assets/images/logo.png" alt="SWORE">
-  </div>
-  <ul class="nav-links" style="opacity:1;">
-    <li><a href="index.html#swore">SWORE</a></li>
-    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">Shop Now</a></li>
+<nav>
+  <a class="nav-logo" href="index.html">SWORE</a>
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="index.html#philosophy">PHILOSOPHY</a></li>
+    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">SHOP</a></li>
   </ul>
-  <div class="lang-switch" style="opacity:1; flex:1; display:flex; justify-content:flex-end;">
-    <a href="index.html" style="font-family:'Cormorant Garamond',serif; font-size:10px; letter-spacing:.4em; color:rgba(232,224,208,.4); text-decoration:none; text-transform:uppercase; transition:color .3s;" onmouseover="this.style.color='rgba(232,224,208,.8)'" onmouseout="this.style.color='rgba(232,224,208,.4)'">← Home</a>
-  </div>
 </nav>
 
 <div class="pp-wrap">
@@ -212,13 +202,14 @@
 
 <!-- FOOTER -->
 <footer>
-  <img class="footer-logo" src="assets/images/logo.png" alt="SWORE">
-  <ul class="footer-nav">
-    <li><a href="index.html#swore">SWORE</a></li>
-    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">Shop Now</a></li>
-  </ul>
-  <div class="footer-policy"><a href="privacy.html">プライバシーポリシー</a></div>
-  <p class="footer-copy">© SWORE. All Rights Reserved.</p>
+  <div class="footer-inner">
+    <p class="footer-brand">SWORE</p>
+    <p class="footer-info">京都府京都市中京区西ノ京</p>
+    <p class="footer-info">080-3857-1439</p>
+    <p class="footer-info">info@swore.jp</p>
+    <p class="footer-info"><a href="privacy.html">プライバシーポリシー</a></p>
+    <p class="footer-copy">© SWORE. All Rights Reserved.</p>
+  </div>
 </footer>
 
 </body>
