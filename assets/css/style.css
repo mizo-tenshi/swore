@@ -136,7 +136,7 @@ section {
   letter-spacing: 0.22em;
   line-height: 1.6;
   color: #fff;
-  animation: heroFade 2.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+  animation: heroFade 5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
 @keyframes heroFade {
@@ -255,7 +255,7 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1.0s ease, transform 1.0s ease;
+  transition: opacity 3.0s ease, transform 3.0s ease;
 }
 .fade-in.visible {
   opacity: 1;
