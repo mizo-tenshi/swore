@@ -112,6 +112,14 @@ section {
 /* ===== HERO ===== */
 .s-hero { position: relative; }
 
+.hero-logo {
+  width: min(200px, 44vw);
+  filter: invert(1);
+  opacity: 0.9;
+  margin-bottom: 56px;
+  animation: heroFade 2.0s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
 .hero-headline {
   font-family: 'Noto Serif JP', serif;
   font-size: clamp(44px, 7.5vw, 104px);
@@ -119,7 +127,7 @@ section {
   letter-spacing: 0.22em;
   line-height: 1.6;
   color: #fff;
-  animation: heroFade 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+  animation: heroFade 1.6s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
 }
 
 @keyframes heroFade {
@@ -138,7 +146,7 @@ section {
   letter-spacing: 0.65em;
   text-transform: uppercase;
   color: #888;
-  animation: heroFade 1.4s ease 1.2s both;
+  animation: heroFade 1.4s ease 2.2s both;
 }
 
 /* ===== OPENING ===== */
