@@ -136,7 +136,6 @@ section {
   letter-spacing: 0.22em;
   line-height: 1.6;
   color: #fff;
-  animation: heroFade 5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
 @keyframes heroFade {
@@ -155,7 +154,6 @@ section {
   letter-spacing: 0.65em;
   text-transform: uppercase;
   color: #888;
-  animation: heroFade 1.6s ease 1.8s both;
 }
 
 /* ===== OPENING ===== */
