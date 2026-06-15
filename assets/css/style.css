@@ -33,7 +33,7 @@ nav {
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.5em;
   text-transform: uppercase;
   color: #fff;
@@ -49,7 +49,7 @@ nav {
 .nav-links a {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #888;
@@ -71,7 +71,7 @@ section {
 .section-label {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.55em;
   text-transform: uppercase;
   color: #888;
@@ -164,7 +164,7 @@ section {
   transform: translateX(-50%);
   font-family: 'Cormorant Garamond', serif;
   font-size: 9px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.65em;
   text-transform: uppercase;
   color: #888;
@@ -197,7 +197,7 @@ section {
   display: inline-block;
   font-family: 'Cormorant Garamond', serif;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.45em;
   text-transform: uppercase;
   color: #fff;
@@ -213,7 +213,7 @@ section {
 .cta-season {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.4em;
   color: #888;
 }
@@ -236,7 +236,7 @@ footer {
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.5em;
   text-transform: uppercase;
   color: #fff;
@@ -259,7 +259,7 @@ footer {
 .footer-copy {
   font-family: 'Cormorant Garamond', serif;
   font-size: 9px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.3em;
   color: #444;
   margin-top: 24px;
