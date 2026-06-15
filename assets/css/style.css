@@ -92,8 +92,20 @@ section {
   font-size: clamp(14px, 1.7vw, 20px);
   font-weight: 200;
   letter-spacing: 0.1em;
-  line-height: 3.0;
+  line-height: 2.4;
   color: #888;
+  margin-top: 72px;
+}
+.section-sub--lead {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: clamp(16px, 2vw, 24px);
+  color: #aaa;
+}
+.section-subs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-top: 72px;
 }
 
