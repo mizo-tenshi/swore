@@ -65,47 +65,49 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 140px 48px;
+  padding: 180px 64px;
 }
 
 .section-label {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
   font-weight: 300;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.55em;
   text-transform: uppercase;
   color: #888;
-  margin-bottom: 72px;
+  margin-bottom: 96px;
 }
 
 .section-headline {
   font-family: 'Noto Serif JP', serif;
-  font-size: clamp(26px, 3.8vw, 52px);
+  font-size: clamp(32px, 4.4vw, 62px);
   font-weight: 200;
-  letter-spacing: 0.14em;
-  line-height: 2.2;
+  letter-spacing: 0.16em;
+  line-height: 2.6;
   color: #fff;
 }
 
 .section-sub {
-  font-size: clamp(13px, 1.6vw, 18px);
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(14px, 1.7vw, 20px);
   font-weight: 200;
   letter-spacing: 0.1em;
-  line-height: 2.4;
+  line-height: 3.0;
   color: #888;
-  margin-top: 48px;
+  margin-top: 72px;
 }
 
 .section-body {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 72px;
 }
 .section-body p {
-  font-size: clamp(18px, 2.6vw, 34px);
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(32px, 4.4vw, 62px);
   font-weight: 200;
-  letter-spacing: 0.1em;
-  line-height: 2.2;
+  letter-spacing: 0.16em;
+  line-height: 2.6;
   color: #fff;
 }
 
@@ -131,10 +133,10 @@ section {
 
 .hero-headline {
   font-family: 'Noto Serif JP', serif;
-  font-size: clamp(44px, 7.5vw, 104px);
+  font-size: clamp(48px, 8vw, 112px);
   font-weight: 200;
-  letter-spacing: 0.22em;
-  line-height: 1.6;
+  letter-spacing: 0.24em;
+  line-height: 2.0;
   color: #fff;
 }
 
@@ -158,19 +160,21 @@ section {
 
 /* ===== OPENING ===== */
 .opening-text {
-  font-size: clamp(20px, 3.2vw, 44px);
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(32px, 4.4vw, 62px);
   font-weight: 200;
-  letter-spacing: 0.12em;
-  line-height: 2.4;
+  letter-spacing: 0.16em;
+  line-height: 2.6;
   color: #fff;
 }
 
 /* ===== FINAL ===== */
 .final-text {
-  font-size: clamp(34px, 5.5vw, 80px);
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(48px, 7vw, 100px);
   font-weight: 200;
-  letter-spacing: 0.18em;
-  line-height: 2.0;
+  letter-spacing: 0.22em;
+  line-height: 2.4;
   color: #fff;
 }
 
@@ -264,7 +268,8 @@ footer {
 @media (max-width: 768px) {
   nav { padding: 20px 24px; }
   .nav-links { gap: 20px; }
-  section { padding: 100px 24px; }
+  section { padding: 120px 28px; }
   .scroll-label { bottom: 32px; }
+  .section-label { margin-bottom: 64px; }
   footer { padding: 72px 24px 40px; }
 }
