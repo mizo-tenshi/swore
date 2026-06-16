@@ -222,6 +222,53 @@ section {
   color: #888;
 }
 
+/* ===== SECTION NOTE ===== */
+.section-note {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(11px, 1.2vw, 14px);
+  font-weight: 200;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-top: 64px;
+}
+
+/* ===== ART ===== */
+.s-art { background: #000; }
+
+.art-text {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(28px, 3.6vw, 52px);
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  line-height: 2.0;
+  color: #fff;
+}
+
+/* ===== LOSS ===== */
+.s-loss {
+  min-height: 120vh;
+}
+
+.loss-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: center;
+}
+
+.loss-inner .fade-in {
+  transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+.loss-line {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(22px, 3.2vw, 46px);
+  font-weight: 200;
+  letter-spacing: 0.14em;
+  line-height: 2.4;
+  color: #fff;
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: #000;
@@ -343,6 +390,19 @@ footer {
     padding: 18px 40px;
     letter-spacing: 0.3em;
   }
+
+  .art-text {
+    font-size: clamp(20px, 5.5vw, 36px);
+    letter-spacing: 0.12em;
+  }
+
+  .loss-line {
+    font-size: clamp(16px, 5vw, 28px);
+    letter-spacing: 0.08em;
+    line-height: 2.2;
+  }
+
+  .loss-inner { gap: 56px; }
 
   footer { padding: 72px 24px 40px; }
   .footer-info { font-size: 10px; }

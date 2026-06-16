@@ -9,7 +9,9 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.fade-in').forEach(el => {
+  const isLoss = !!el.closest('.loss-inner');
   const siblings = [...el.parentElement.querySelectorAll('.fade-in')];
-  el.style.transitionDelay = (siblings.indexOf(el) * 0.18) + 's';
+  const step = isLoss ? 0.3 : 0.18;
+  el.style.transitionDelay = (siblings.indexOf(el) * step) + 's';
   observer.observe(el);
 });
