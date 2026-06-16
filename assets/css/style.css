@@ -194,6 +194,16 @@ section {
   color: #fff;
 }
 
+.final-sub {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(16px, 2vw, 26px);
+  font-weight: 200;
+  letter-spacing: 0.14em;
+  line-height: 2.4;
+  color: #888;
+  margin-top: 72px;
+}
+
 /* ===== CTA ===== */
 .s-cta { gap: 40px; }
 
@@ -389,6 +399,12 @@ footer {
     font-size: 11px;
     padding: 18px 40px;
     letter-spacing: 0.3em;
+  }
+
+  .final-sub {
+    font-size: clamp(13px, 3.5vw, 18px);
+    letter-spacing: 0.08em;
+    margin-top: 48px;
   }
 
   .art-text {
