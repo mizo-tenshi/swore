@@ -284,8 +284,66 @@ footer {
 @media (max-width: 768px) {
   nav { padding: 20px 24px; }
   .nav-links { gap: 20px; }
-  section { padding: 120px 28px; }
+  .nav-links a { font-size: 9px; letter-spacing: 0.25em; }
+
+  section { padding: 100px 28px; }
   .scroll-label { bottom: 32px; }
-  .section-label { margin-bottom: 64px; }
+
+  .section-label {
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    margin-bottom: 56px;
+  }
+
+  .hero-headline {
+    font-size: clamp(32px, 9vw, 52px);
+    letter-spacing: 0.1em;
+    line-height: 1.9;
+  }
+
+  .section-headline {
+    font-size: clamp(22px, 6.5vw, 36px);
+    letter-spacing: 0.08em;
+    line-height: 2.2;
+  }
+
+  .section-body p {
+    font-size: clamp(22px, 6.5vw, 36px);
+    letter-spacing: 0.08em;
+    line-height: 2.2;
+  }
+
+  .section-sub {
+    font-size: clamp(13px, 3.5vw, 17px);
+    letter-spacing: 0.06em;
+    line-height: 2.4;
+    margin-top: 48px;
+  }
+
+  .section-sub--lead {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .opening-text {
+    font-size: clamp(22px, 6.5vw, 36px);
+    letter-spacing: 0.08em;
+    line-height: 2.2;
+  }
+
+  .final-text {
+    font-size: clamp(28px, 8.5vw, 52px);
+    letter-spacing: 0.1em;
+    line-height: 2.2;
+  }
+
+  .hero-logo { width: min(260px, 68vw); }
+
+  .cta-btn {
+    font-size: 11px;
+    padding: 18px 40px;
+    letter-spacing: 0.3em;
+  }
+
   footer { padding: 72px 24px 40px; }
+  .footer-info { font-size: 10px; }
 }
