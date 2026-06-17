@@ -58,19 +58,33 @@ nav {
 .nav-links a:hover { color: #fff; }
 
 .lang-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lang-opt {
   font-family: 'Cormorant Garamond', serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: #888;
-  background: none;
-  border: none;
-  cursor: pointer;
+  color: #444;
   transition: color 0.4s ease;
-  padding: 0;
 }
-.lang-toggle:hover { color: #fff; }
+.lang-opt.active { color: #fff; }
+.lang-sep {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  color: #333;
+  letter-spacing: 0;
+}
+.lang-toggle:hover .lang-opt { color: #666; }
+.lang-toggle:hover .lang-opt.active { color: #fff; }
 
 /* ===== SECTIONS (shared) ===== */
 section {

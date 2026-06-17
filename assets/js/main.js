@@ -17,27 +17,35 @@ document.querySelectorAll('.fade-in').forEach(el => {
 });
 
 // Language toggle
-function setLang(lang) {
-  document.querySelectorAll('[data-en]').forEach(el => {
+let currentLang = localStorage.getItem('swore-lang') || 'ja';
+
+function applyLang(lang) {
+  document.querySelectorAll('[data-en]').forEach(function(el) {
     if (lang === 'en') {
-      if (!el.dataset.ja) el.dataset.ja = el.innerHTML;
-      el.innerHTML = el.dataset.en;
+      if (!el.getAttribute('data-ja')) {
+        el.setAttribute('data-ja', el.innerHTML);
+      }
+      el.innerHTML = el.getAttribute('data-en');
     } else {
-      if (el.dataset.ja) el.innerHTML = el.dataset.ja;
+      var ja = el.getAttribute('data-ja');
+      if (ja) el.innerHTML = ja;
     }
   });
-  const btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = lang === 'en' ? 'JA' : 'EN';
+
+  var optJa = document.getElementById('opt-ja');
+  var optEn = document.getElementById('opt-en');
+  if (optJa) optJa.classList.toggle('active', lang === 'ja');
+  if (optEn) optEn.classList.toggle('active', lang === 'en');
+
   localStorage.setItem('swore-lang', lang);
+  currentLang = lang;
 }
 
-const langBtn = document.getElementById('lang-toggle');
+var langBtn = document.getElementById('lang-toggle');
 if (langBtn) {
-  langBtn.addEventListener('click', () => {
-    const current = localStorage.getItem('swore-lang') || 'ja';
-    setLang(current === 'en' ? 'ja' : 'en');
+  langBtn.addEventListener('click', function() {
+    applyLang(currentLang === 'en' ? 'ja' : 'en');
   });
 }
 
-const savedLang = localStorage.getItem('swore-lang');
-if (savedLang === 'en') setLang('en');
+if (currentLang === 'en') applyLang('en');
