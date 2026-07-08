@@ -1,123 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SWORE | 一生に、一着。</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWOЯE | 一生に、一着。— 百年前の編み機で編む日本製スウェット</title>
+  <meta name="description" content="百年以上前の編み機で編んだ生地のみを使う日本製スウェット。生産数に限りがあるため、ウェイティングリスト登録者のみにご案内しています。">
+
+  <!-- Open Graph / OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swore.jp/">
+  <meta property="og:title" content="SWOЯE | 一生に、一着。— 百年前の編み機で編む日本製スウェット">
+  <meta property="og:description" content="百年以上前の編み機で編んだ生地のみを使う日本製スウェット。生産数に限りがあるため、ウェイティングリスト登録者のみにご案内しています。">
+  <meta property="og:image" content="https://swore.jp/assets/images/og-image.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SWOЯE | 一生に、一着。— 百年前の編み機で編む日本製スウェット">
+  <meta name="twitter:description" content="百年以上前の編み機で編んだ生地のみを使う日本製スウェット。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Shippori+Mincho:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="nav">
-  <a class="nav-logo" href="#top">SWORE</a>
-  <ul class="nav-links">
-    <li><a href="#top">HOME</a></li>
-    <li><a href="#philosophy">PHILOSOPHY</a></li>
-    <li><a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">SHOP</a></li>
-  </ul>
-  <button class="lang-toggle" id="lang-toggle" type="button">
-    <span class="lang-opt active" id="opt-ja">JA</span>
-    <span class="lang-sep">·</span>
-    <span class="lang-opt" id="opt-en">EN</span>
-  </button>
-</nav>
+<!-- ==================== HEADER ==================== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="header-logo" href="#top" aria-label="SWOЯE — ページトップへ">
+      <img src="assets/images/logo-hero.png" alt="SWOЯE" width="52" height="52">
+    </a>
+    <nav class="header-nav" id="header-nav" aria-label="メインナビゲーション">
+      <a href="#philosophy" data-en="PHILOSOPHY">PHILOSOPHY</a>
+      <a href="#craft" data-en="THE CRAFT">THE CRAFT</a>
+      <a href="#process" data-en="PROCESS">PROCESS</a>
+      <a href="#waitinglist" class="nav-wl" data-en="WAITING LIST">WAITING LIST</a>
+    </nav>
+    <div class="header-right">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="言語切替 / Switch Language">
+        <span class="lang-opt active" id="opt-ja">JP</span>
+        <span class="lang-sep">·</span>
+        <span class="lang-opt" id="opt-en">EN</span>
+      </button>
+      <button class="nav-burger" id="nav-burger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!-- LOGO -->
-<section class="s-logo" id="top">
-  <img class="hero-logo" src="assets/images/logo-hero.png" alt="SWORE">
+<!-- ==================== HERO ==================== -->
+<section class="s-hero" id="top">
+  <div class="hero-inner">
+    <img class="hero-logo" src="assets/images/logo-hero.png" alt="SWOЯE" width="240" height="240">
+    <h1 class="hero-tagline hero-reveal" data-en="One garment, for a lifetime.">一生に、一着。</h1>
+    <a class="cta-btn hero-reveal" href="#waitinglist" data-en="Join the Waiting List" style="animation-delay:.9s">ウェイティングリストに登録する</a>
+    <p class="hero-meta hero-reveal" style="animation-delay:1.1s">MADE IN JAPAN &nbsp;—&nbsp; WAITING LIST ONLY &nbsp;—&nbsp; 2026 A/W</p>
+  </div>
 </section>
 
-<!-- 1. FIRST VIEW -->
-<section class="s-hero">
-  <h1 class="hero-headline fade-in" data-en="One Garment. For Life.">一生に、一着。</h1>
-  <span class="scroll-label fade-in">SCROLL</span>
-</section>
-
-<!-- 2. OPENING -->
-<section class="s-opening">
-  <p class="opening-text fade-in" data-en="Not how many you own. How many you can love for a lifetime.">何着持っているかではなく、<br>何着、長く愛せるか。</p>
-</section>
-
-<!-- 3. PHILOSOPHY -->
+<!-- ==================== PHILOSOPHY ==================== -->
 <section class="s-philosophy" id="philosophy">
-  <span class="section-label fade-in">PHILOSOPHY</span>
-  <div class="section-body fade-in">
-    <p data-en="For those who cherish one garment for life.">一着を、長く愛せる人へ。</p>
-    <p data-en="SWORE grows with you, through time.">SWOREは、<br class="sp-only">あなたの時間と共に、<br class="sp-only">育てるもの。</p>
-    <p data-en="And someday, something to pass on.">そして、いつか誰かに、<br class="sp-only">譲るもの。</p>
+  <span class="section-eyebrow fade-in">PHILOSOPHY</span>
+  <p class="philosophy-text fade-in" data-en="Bringing the finest dignity to your everyday.">あなたの日常に最上級の品格を届ける</p>
+</section>
+
+<!-- ==================== THE CRAFT ==================== -->
+<section class="s-craft" id="craft">
+  <span class="section-eyebrow fade-in">THE CRAFT</span>
+  <div class="craft-grid">
+
+    <article class="craft-card fade-in">
+      <div class="craft-img" role="img" aria-label="百年前の編み機で織られた生地のアップ"></div>
+      <h2 class="craft-title" data-en="A Century-Old Loom">百年前の編み機</h2>
+      <p class="craft-body" data-en="Ten metres a day. No more. Only a loom built over a century ago yields this cloth.">一日にわずか十メートル。百年以上前の編み機だけが生む生地。</p>
+    </article>
+
+    <article class="craft-card fade-in">
+      <div class="craft-img" role="img" aria-label="日本の職人の手元"></div>
+      <h2 class="craft-title" data-en="Japanese Artisans">日本の職人</h2>
+      <p class="craft-body" data-en="Every step, by Japanese hands. From knitting to finishing — no process leaves the country.">すべての工程を国内の職人の手で。編みから仕上げまで、一切を日本国内で。</p>
+    </article>
+
+    <article class="craft-card fade-in">
+      <div class="craft-img" role="img" aria-label="独自の縫製技術"></div>
+      <h2 class="craft-title" data-en="Proprietary Construction">独自の縫製技術</h2>
+      <p class="craft-body" data-en="A construction method refined over decades — built to maintain its form across a lifetime of wear.">長年にわたり磨き上げた独自の縫製技術。一生、形を保つために。</p>
+    </article>
+
   </div>
 </section>
 
-<!-- 4. THE CRAFT -->
-<section class="s-craft">
-  <span class="section-label fade-in">THE CRAFT</span>
-  <h2 class="section-headline fade-in" data-en="A hundred-year-old machine, still running.">百年前の機械が、<br class="sp-only">今も動いている。</h2>
-  <div class="section-subs">
-    <p class="section-sub fade-in" data-en="Standard fabric: 200m produced per day.">一般的な生地は、一日に二百m量産可能。</p>
-    <p class="section-sub fade-in" data-en="SWORE uses a machine over a century old — capable of knitting only 10m per day.">一方、SWOREの商品は、一日にわずか十mしか編めない、百年以上前の機械を使用。</p>
-    <p class="section-note fade-in" data-en="※ SWORE exclusively uses this fabric.">※ SWOREはその生地のみを使用。</p>
+<!-- ==================== MID CTA ==================== -->
+<div class="s-midcta">
+  <p class="midcta-text fade-in" data-en="Production is strictly limited. Purchase is offered exclusively to those registered on our waiting list.">生産数に限りがあるため、ご購入はウェイティングリスト登録者のみにご案内しています。</p>
+  <a class="cta-btn cta-btn--light fade-in" href="#waitinglist" data-en="Join the Waiting List">ウェイティングリストに登録する</a>
+</div>
+
+<!-- ==================== PROCESS ==================== -->
+<section class="s-process" id="process">
+  <span class="section-eyebrow fade-in">PROCESS</span>
+  <div class="process-grid">
+
+    <div class="process-step fade-in">
+      <span class="step-num">01</span>
+      <h2 class="step-title" data-en="Register">ウェイティングリスト登録</h2>
+      <p class="step-body" data-en="Register your name and email address below.">お名前とメールアドレスをご登録ください。</p>
+    </div>
+
+    <div class="process-step fade-in">
+      <span class="step-num">02</span>
+      <h2 class="step-title" data-en="We Contact You">メールでのご案内</h2>
+      <p class="step-body" data-en="When your turn arrives, we will reach out by email.">順番が来次第、メールにてご案内いたします。</p>
+    </div>
+
+    <div class="process-step fade-in">
+      <span class="step-num">03</span>
+      <h2 class="step-title" data-en="Confirm Specifications">サイズ・仕様のご確認</h2>
+      <p class="step-body" data-en="Together we confirm your preferred size and any details.">ご希望のサイズと仕様をご一緒に確認いたします。</p>
+    </div>
+
+    <div class="process-step fade-in">
+      <span class="step-num">04</span>
+      <h2 class="step-title" data-en="Tailoring &amp; Delivery">お仕立て・お届け</h2>
+      <p class="step-body" data-en="Your garment is crafted and delivered to you.">お仕立てを経て、あなたのお手元へお届けします。</p>
+    </div>
+
   </div>
 </section>
 
-<!-- 6. THE FEEL -->
-<section class="s-feel">
-  <span class="section-label fade-in">THE FEEL</span>
-  <h2 class="section-headline fade-in" data-en="You know the moment you touch it.">触れた瞬間、わかる。</h2>
-  <p class="section-sub fade-in" data-en="Its softness and lightness are incomparable.">その柔らかさと軽さは、<br class="sp-only">他の何とも比べられない。</p>
-  <p class="section-sub fade-in" data-en="The more you wear it, the more it becomes uniquely yours.">着れば着るほどあなた独自の形に。</p>
+<!-- ==================== WAITING LIST FORM ==================== -->
+<section class="s-form" id="waitinglist">
+  <span class="section-eyebrow fade-in">WAITING LIST</span>
+  <h2 class="form-heading fade-in" data-en="Register your interest.">ウェイティングリストへのご登録</h2>
+
+  <form class="wl-form fade-in" id="wl-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+    <!-- Honeypot (spam prevention) -->
+    <div style="display:none" aria-hidden="true">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div id="wl-form-body">
+
+      <div class="form-field">
+        <label class="form-label" for="f-name">
+          <span class="label-text" data-en="Full Name">氏名</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
+        </label>
+        <input class="form-input" type="text" id="f-name" name="name" required autocomplete="name">
+        <span class="form-err" id="err-name" role="alert" hidden data-en="Please enter your name.">お名前を入力してください。</span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="f-email">
+          <span class="label-text" data-en="Email Address">メールアドレス</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
+        </label>
+        <input class="form-input" type="email" id="f-email" name="email" required autocomplete="email">
+        <span class="form-err" id="err-email" role="alert" hidden data-en="Please enter a valid email address.">有効なメールアドレスを入力してください。</span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="f-country">
+          <span class="label-text" data-en="Country / Region">居住国・地域</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
+        </label>
+        <div class="select-wrap">
+          <select class="form-input form-select" id="f-country" name="country" required>
+            <option value="" data-en="— Please select —">— お選びください —</option>
+            <option value="JP" data-en="Japan">日本</option>
+            <option value="US" data-en="United States">アメリカ合衆国</option>
+            <option value="GB" data-en="United Kingdom">イギリス</option>
+            <option value="FR" data-en="France">フランス</option>
+            <option value="DE" data-en="Germany">ドイツ</option>
+            <option value="IT" data-en="Italy">イタリア</option>
+            <option value="CN" data-en="China">中国</option>
+            <option value="KR" data-en="South Korea">韓国</option>
+            <option value="TW" data-en="Taiwan">台湾</option>
+            <option value="HK" data-en="Hong Kong">香港</option>
+            <option value="SG" data-en="Singapore">シンガポール</option>
+            <option value="AU" data-en="Australia">オーストラリア</option>
+            <option value="CA" data-en="Canada">カナダ</option>
+            <option value="OTHER" data-en="Other">その他</option>
+          </select>
+          <span class="select-arrow" aria-hidden="true"></span>
+        </div>
+        <span class="form-err" id="err-country" role="alert" hidden data-en="Please select your country or region.">居住国・地域を選択してください。</span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="f-size">
+          <span class="label-text" data-en="Preferred Size">希望サイズ</span>
+          <span class="label-opt" data-en="(optional)">（任意）</span>
+        </label>
+        <div class="select-wrap">
+          <select class="form-input form-select" id="f-size" name="size">
+            <option value="" data-en="— No preference —">— 未定 —</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <span class="select-arrow" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="f-referrer">
+          <span class="label-text" data-en="Referred by">ご紹介者名</span>
+          <span class="label-opt" data-en="(optional)">（任意）</span>
+        </label>
+        <input class="form-input" type="text" id="f-referrer" name="referrer" autocomplete="off">
+      </div>
+
+      <p class="form-privacy" data-en='Your information will be used solely for the purpose of this waiting list. See our <a href="privacy.html">Privacy Policy</a>.'>ご登録内容はご案内以外の目的には使用しません。<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+      <button class="cta-btn cta-btn--submit" type="submit" data-en="Submit Registration">登録する</button>
+
+    </div><!-- /#wl-form-body -->
+
+    <div class="form-success" id="form-success" hidden aria-live="polite">
+      <p data-en="Thank you. We will be in touch when your turn arrives.">ご登録ありがとうございます。順番が来次第、ご連絡いたします。</p>
+    </div>
+    <div class="form-fail" id="form-fail" hidden aria-live="polite">
+      <p data-en="Something went wrong. Please try again or contact us at info@swore.jp.">エラーが発生しました。再度お試しいただくか、<a href="mailto:info@swore.jp">info@swore.jp</a> までご連絡ください。</p>
+    </div>
+
+  </form>
 </section>
 
-<!-- 8. MADE IN JAPAN -->
-<section class="s-mij">
-  <span class="section-label fade-in">MADE IN JAPAN</span>
-  <h2 class="section-headline fade-in" data-en="Every step, crafted by the hands of Japanese artisans.">すべての工程を、<br class="sp-only">日本の職人の手で。</h2>
-  <p class="section-sub fade-in" data-en="The artisan's skill lives in every single piece.">職人の技が、一着ずつに宿る。</p>
+<!-- ==================== FINAL CTA ==================== -->
+<section class="s-finalcta">
+  <p class="finalcta-text fade-in" data-en="For your lifetime, this one garment.">あなたの一生に、この一着を。</p>
+  <a class="cta-btn fade-in" href="#waitinglist" data-en="Join the Waiting List">ウェイティングリストに登録する</a>
 </section>
 
-<!-- 9. RECOGNITION -->
-<section class="s-recognition">
-  <span class="section-label fade-in">RECOGNITION</span>
-  <h2 class="section-headline fade-in" data-en="Recognized in Paris and Milan.">パリ、ミラノで、認められた。</h2>
-  <div class="section-subs">
-    <p class="section-sub fade-in" data-en="Internationally acclaimed.">国際的な評価を得ている。</p>
-    <p class="section-sub fade-in" data-en="Our partner factory has exhibited at the Paris and Milan Collections.">提携縫製工場は、パリ・ミラノコレクションへの出展実績を持つ。</p>
-    <p class="section-sub fade-in" data-en="Sewn using Japan's only patented sewing technology.">縫製には、国内唯一の特許技術を使用。</p>
-  </div>
-</section>
-
-<!-- 10. LOSS -->
-<section class="s-loss">
-  <div class="loss-inner">
-    <p class="loss-line fade-in" data-en="This machine can no longer be made.">この機械は、もう作れない。</p>
-    <p class="loss-line fade-in" data-en="Modern technology cannot recreate it.">現代の技術では、<br class="sp-only">再現できない。</p>
-    <p class="loss-line fade-in" data-en="The moment it breaks, SWORE is over.">壊れた瞬間、SWOREは終わる。</p>
-    <p class="loss-line fade-in" data-en="Some will pass this piece on to their children.">このスウェットを、<br class="sp-only">子に譲る人がいる。</p>
-    <p class="loss-line fade-in" data-en="Some will never hold this piece.">このスウェットを、<br class="sp-only">手にできない人がいる。</p>
-  </div>
-</section>
-
-<!-- 11. FINAL MESSAGE -->
-<section class="s-final">
-  <p class="final-text fade-in" data-en="For your lifetime, this one piece.">あなたの一生に、<br>この一着を。</p>
-</section>
-
-<!-- 12. CTA -->
-<section class="s-cta">
-  <a class="cta-btn fade-in" href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer">VIEW COLLECTION</a>
-  <span class="cta-season fade-in">2026 A/W</span>
-</section>
-
-<!-- FOOTER -->
-<footer>
+<!-- ==================== FOOTER ==================== -->
+<footer id="site-footer">
   <div class="footer-inner">
-    <p class="footer-brand">SWORE</p>
-    <p class="footer-info">info@swore.jp</p>
-    <p class="footer-info"><a href="privacy.html">プライバシーポリシー</a></p>
-    <p class="footer-copy">© SWORE. All Rights Reserved.</p>
+    <a href="#top" class="footer-logo-link" aria-label="SWOЯE — トップへ">
+      <img src="assets/images/logo-hero.png" alt="SWOЯE" width="56" height="56" loading="lazy">
+    </a>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="#philosophy" data-en="PHILOSOPHY">PHILOSOPHY</a>
+      <a href="#craft" data-en="THE CRAFT">THE CRAFT</a>
+      <a href="#process" data-en="PROCESS">PROCESS</a>
+      <a href="#waitinglist" data-en="WAITING LIST">WAITING LIST</a>
+    </nav>
+    <div class="footer-legal">
+      <a href="privacy.html" data-en="Privacy Policy">プライバシーポリシー</a>
+      <span class="footer-sep">|</span>
+      <a href="tokushoho.html" data-en="Specified Commercial Transactions Act">特定商取引法に基づく表記</a>
+      <span class="footer-sep">|</span>
+      <a href="mailto:info@swore.jp">info@swore.jp</a>
+    </div>
+    <p class="footer-copy">© 2026 SWO&#1071;E. All rights reserved.</p>
   </div>
 </footer>
 
