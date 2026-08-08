@@ -207,12 +207,12 @@ section {
   height: auto;
   /* 黒ロゴをそのまま使用 */
   opacity: 0;
-  animation: logoFade 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  animation: logoFade 2.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
 @keyframes logoFade {
-  from { opacity: 0; transform: scale(0.97); }
-  to   { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .hero-tagline {
@@ -681,8 +681,8 @@ section {
 =================================================== */
 .hero-reveal {
   opacity: 0;
-  animation: heroReveal 0.9s ease forwards;
-  animation-delay: 0.7s; /* default; overridden per-element inline */
+  animation: heroReveal 1.0s ease forwards;
+  animation-delay: 2.8s; /* default; overridden per-element inline */
 }
 
 @keyframes heroReveal {
