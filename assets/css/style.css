@@ -280,6 +280,24 @@ section {
 }
 
 /* ===================================================
+   HERO TEXT (scroll-triggered)
+=================================================== */
+.s-hero-text {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 48px;
+}
+
+.hero-text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* ===================================================
    PHILOSOPHY
 =================================================== */
 .s-philosophy {
@@ -762,6 +780,10 @@ section {
   .hero-logo { width: min(200px, 60vw); }
   .hero-tagline { font-size: clamp(32px, 9vw, 52px); letter-spacing: 0.14em; }
   .hero-inner { gap: 36px; }
+
+  /* Hero text */
+  .s-hero-text { padding: 80px 28px; min-height: 70vh; }
+  .hero-text-inner { gap: 36px; }
 
   /* Philosophy */
   .s-philosophy { min-height: auto; padding: 100px 28px; }
