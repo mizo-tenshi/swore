@@ -203,7 +203,7 @@ section {
 }
 
 .hero-logo {
-  width: min(240px, 52vw);
+  width: min(480px, 70vw);
   height: auto;
   /* 黒ロゴをそのまま使用 */
   opacity: 0;
@@ -264,11 +264,13 @@ section {
 
 /* フォーム送信ボタン */
 .cta-btn--submit {
-  margin-top: 16px;
+  display: block;
+  margin: 16px auto 0;
   background: var(--ink);
   color: var(--bg);
   border-color: var(--ink);
   min-width: 200px;
+  text-align: center;
 }
 .cta-btn--submit:hover {
   background: transparent;
@@ -306,6 +308,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 56px;
   position: relative;
 }
 
@@ -392,7 +395,7 @@ section {
   letter-spacing: 0.16em;
   line-height: 2.2;
   color: rgba(255,255,255,0.82);
-  max-width: 660px;
+  max-width: 880px;
 }
 
 /* ===================================================
@@ -777,7 +780,7 @@ section {
 
   /* Hero */
   .s-hero { padding: 80px 28px 72px; }
-  .hero-logo { width: min(200px, 60vw); }
+  .hero-logo { width: min(340px, 80vw); }
   .hero-tagline { font-size: clamp(32px, 9vw, 52px); letter-spacing: 0.14em; }
   .hero-inner { gap: 36px; }
 
