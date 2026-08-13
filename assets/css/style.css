@@ -207,7 +207,7 @@ section {
   height: auto;
   /* 黒ロゴをそのまま使用 */
   opacity: 0;
-  animation: logoFade 11.4s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+  animation: logoFade 22.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
 @keyframes logoFade {
