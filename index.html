@@ -103,98 +103,15 @@
   <span class="section-eyebrow fade-in">WAITING LIST</span>
   <h2 class="form-heading fade-in" data-en="Register your interest.">ウェイティングリストへのご登録</h2>
 
-  <form class="wl-form fade-in" id="wl-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-
-    <!-- Honeypot (spam prevention) -->
-    <div style="display:none" aria-hidden="true">
-      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-    </div>
-
-    <div id="wl-form-body">
-
-      <div class="form-field">
-        <label class="form-label" for="f-name">
-          <span class="label-text" data-en="Full Name">氏名</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
-        </label>
-        <input class="form-input" type="text" id="f-name" name="name" required autocomplete="name">
-        <span class="form-err" id="err-name" role="alert" hidden data-en="Please enter your name.">お名前を入力してください。</span>
-      </div>
-
-      <div class="form-field">
-        <label class="form-label" for="f-email">
-          <span class="label-text" data-en="Email Address">メールアドレス</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
-        </label>
-        <input class="form-input" type="email" id="f-email" name="email" required autocomplete="email">
-        <span class="form-err" id="err-email" role="alert" hidden data-en="Please enter a valid email address.">有効なメールアドレスを入力してください。</span>
-      </div>
-
-      <div class="form-field">
-        <label class="form-label" for="f-country">
-          <span class="label-text" data-en="Country / Region">居住国・地域</span><abbr class="req" title="必須" aria-label="必須">*</abbr>
-        </label>
-        <div class="select-wrap">
-          <select class="form-input form-select" id="f-country" name="country" required>
-            <option value="" data-en="— Please select —">— お選びください —</option>
-            <option value="JP" data-en="Japan">日本</option>
-            <option value="US" data-en="United States">アメリカ合衆国</option>
-            <option value="GB" data-en="United Kingdom">イギリス</option>
-            <option value="FR" data-en="France">フランス</option>
-            <option value="DE" data-en="Germany">ドイツ</option>
-            <option value="IT" data-en="Italy">イタリア</option>
-            <option value="CN" data-en="China">中国</option>
-            <option value="KR" data-en="South Korea">韓国</option>
-            <option value="TW" data-en="Taiwan">台湾</option>
-            <option value="HK" data-en="Hong Kong">香港</option>
-            <option value="SG" data-en="Singapore">シンガポール</option>
-            <option value="AU" data-en="Australia">オーストラリア</option>
-            <option value="CA" data-en="Canada">カナダ</option>
-            <option value="OTHER" data-en="Other">その他</option>
-          </select>
-          <span class="select-arrow" aria-hidden="true"></span>
-        </div>
-        <span class="form-err" id="err-country" role="alert" hidden data-en="Please select your country or region.">居住国・地域を選択してください。</span>
-      </div>
-
-      <div class="form-field">
-        <label class="form-label" for="f-size">
-          <span class="label-text" data-en="Preferred Size">希望サイズ</span>
-          <span class="label-opt" data-en="(optional)">（任意）</span>
-        </label>
-        <div class="select-wrap">
-          <select class="form-input form-select" id="f-size" name="size">
-            <option value="" data-en="— Please select —">— お選びください —</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-          </select>
-          <span class="select-arrow" aria-hidden="true"></span>
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label class="form-label" for="f-referrer">
-          <span class="label-text" data-en="Referred by">ご紹介者名</span>
-          <span class="label-opt" data-en="(optional)">（任意）</span>
-        </label>
-        <input class="form-input" type="text" id="f-referrer" name="referrer" autocomplete="off">
-      </div>
-
-      <p class="form-privacy" data-en='Your information will be used solely for the purpose of this waiting list. See our <a href="privacy.html">Privacy Policy</a>.'>ご登録内容はご案内以外の目的には使用しません。<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
-
-      <button class="cta-btn cta-btn--submit" type="submit" data-en="Submit Registration">登録する</button>
-
-    </div><!-- /#wl-form-body -->
-
-    <div class="form-success" id="form-success" hidden aria-live="polite">
-      <p data-en="Thank you. We will be in touch when your turn arrives.">ご登録ありがとうございます。順番が来次第、ご連絡いたします。</p>
-    </div>
-    <div class="form-fail" id="form-fail" hidden aria-live="polite">
-      <p data-en="Something went wrong. Please try again or contact us at info@swore.jp.">エラーが発生しました。再度お試しいただくか、<a href="mailto:info@swore.jp">info@swore.jp</a> までご連絡ください。</p>
-    </div>
-
-  </form>
+  <div class="wl-cta fade-in">
+    <p class="wl-cta-text" data-en="Registrations are accepted on a first-come, first-served basis.">登録はご順番に承ります。</p>
+    <a class="cta-btn"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSdoFMrydWMFd64N1vX41mi68ip1ArtLiHUIdTnEWTADJIygHA/viewform"
+       target="_blank"
+       rel="noopener noreferrer"
+       data-en="Register for Waiting List">ウェイティングリストに登録する</a>
+    <p class="form-privacy" data-en='Your information will be used solely for the purpose of this waiting list. See our <a href="privacy.html">Privacy Policy</a>.'>ご登録内容はご案内以外の目的には使用しません。<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </div>
 </section>
 
 <!-- ==================== FINAL CTA ==================== -->
