@@ -486,6 +486,40 @@ section {
   background: #F9F7F4;
 }
 
+/* 購入ボタン */
+.purchase-wrap {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.purchase-divider {
+  display: block;
+  width: 1px;
+  height: 48px;
+  background: var(--lite);
+}
+
+.purchase-btn {
+  display: inline-block;
+  font-family: var(--serif-ja);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: var(--sub);
+  border: 1px solid rgba(26,26,26,0.25);
+  padding: 18px 52px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.purchase-btn:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+  opacity: 1;
+}
+
 .form-heading {
   font-family: var(--serif-ja);
   font-size: clamp(20px, 2.4vw, 32px);
