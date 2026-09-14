@@ -193,9 +193,33 @@ section {
   align-items: center;
   justify-content: center;
   padding: 72px 48px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* スライドショー背景 */
+.hero-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2.5s ease;
+}
+
+.hero-slide.active {
+  opacity: 0.13;
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
