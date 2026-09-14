@@ -20,38 +20,6 @@
   }, 4000);
 })();
 
-/* ── Page-wide image background (A/B crossfade) ── */
-(function () {
-  const slides = [
-    'IMG_5561.JPG','IMG_5564.JPG','IMG_5565.JPG','IMG_5571.JPG','IMG_5573.JPG',
-    'IMG_5577.JPG','IMG_5578.JPG','IMG_5582.JPG','IMG_5583.JPG','IMG_5590.JPG'
-  ];
-  const slA = document.querySelector('.page-slide--a');
-  const slB = document.querySelector('.page-slide--b');
-  if (!slA || !slB) return;
-
-  let current = 0;
-  let useA = true;
-
-  function next() {
-    const url = `url('assets/images/slides/${slides[current]}')`;
-    current = (current + 1) % slides.length;
-
-    if (useA) {
-      slA.style.backgroundImage = url;
-      slA.classList.add('active');
-      slB.classList.remove('active');
-    } else {
-      slB.style.backgroundImage = url;
-      slB.classList.add('active');
-      slA.classList.remove('active');
-    }
-    useA = !useA;
-  }
-
-  next();
-  setInterval(next, 8000);
-})();
 
 /* ── Scroll fade-in ── */
 const observer = new IntersectionObserver((entries) => {
