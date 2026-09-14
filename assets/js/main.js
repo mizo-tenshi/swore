@@ -1,4 +1,26 @@
-/* ── Hero slideshow ── */
+/* ── Hero video slideshow ── */
+(function () {
+  const videos = document.querySelectorAll('#hero-video-bg .bg-video');
+  if (!videos.length) return;
+
+  let current = 0;
+
+  function playVideo(idx) {
+    videos.forEach(v => { v.classList.remove('active'); v.pause(); });
+    videos[idx].currentTime = 0;
+    videos[idx].play().catch(() => {});
+    videos[idx].classList.add('active');
+  }
+
+  playVideo(current);
+
+  setInterval(() => {
+    current = (current + 1) % videos.length;
+    playVideo(current);
+  }, 3000);
+})();
+
+/* ── Section image slideshow ── */
 (function () {
   const slides = [
     'IMG_5561.JPG','IMG_5562.JPG','IMG_5563.JPG','IMG_5564.JPG','IMG_5565.JPG',
@@ -8,25 +30,25 @@
     'IMG_5583.JPG','IMG_5584.JPG','IMG_5585.JPG','IMG_5587.JPG','IMG_5588.JPG',
     'IMG_5589.JPG','IMG_5590.JPG','IMG_5591.JPG','IMG_5592.JPG','IMG_5593.JPG'
   ];
-  const container = document.getElementById('hero-slides');
-  if (!container) return;
-
-  const els = slides.map(name => {
-    const div = document.createElement('div');
-    div.className = 'hero-slide';
-    div.style.backgroundImage = `url('assets/images/slides/${name}')`;
-    container.appendChild(div);
-    return div;
-  });
+  const sectionBgs = document.querySelectorAll('.section-bg');
+  if (!sectionBgs.length) return;
 
   let current = 0;
-  els[current].classList.add('active');
 
-  setInterval(() => {
-    els[current].classList.remove('active');
-    current = (current + 1) % els.length;
-    els[current].classList.add('active');
-  }, 4000);
+  function updateBg() {
+    const url = `assets/images/slides/${slides[current]}`;
+    sectionBgs.forEach(el => {
+      el.style.opacity = '0';
+      setTimeout(() => {
+        el.style.backgroundImage = `url('${url}')`;
+        el.style.opacity = '0.11';
+      }, 1200);
+    });
+    current = (current + 1) % slides.length;
+  }
+
+  updateBg();
+  setInterval(updateBg, 5000);
 })();
 
 /* ── Scroll fade-in ── */
