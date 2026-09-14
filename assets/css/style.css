@@ -219,11 +219,16 @@ section {
   opacity: 0.22;
 }
 
-/* ページ全体の固定画像背景 */
+/* PHILOSOPHY + PROCESS 共通画像背景コンテナ */
+.content-bg-area {
+  position: relative;
+  overflow: hidden;
+}
+
 #page-image-bg {
-  position: fixed;
+  position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -238,25 +243,15 @@ section {
 
 .page-slide.active { opacity: 0.13; }
 
-/* セクションを固定背景の上に重ねる */
-#site-header { z-index: 200; }
-
-.s-hero {
-  z-index: 2;
-  background: transparent;
-}
-
 .s-philosophy,
-.s-process,
-.s-form {
+.s-process {
   position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.84);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.80);
 }
 
-#site-footer {
-  position: relative;
-  z-index: 2;
+.s-form {
+  background: #F9F7F4;
 }
 
 .hero-inner {

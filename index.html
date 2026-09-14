@@ -27,12 +27,6 @@
 </head>
 <body>
 
-<!-- ==================== GLOBAL IMAGE BACKGROUND ==================== -->
-<div id="page-image-bg" aria-hidden="true">
-  <div class="page-slide page-slide--a"></div>
-  <div class="page-slide page-slide--b"></div>
-</div>
-
 <!-- ==================== HEADER ==================== -->
 <header id="site-header">
   <div class="header-inner">
@@ -72,15 +66,19 @@
   </div>
 </section>
 
-<!-- ==================== PHILOSOPHY ==================== -->
-<section class="s-philosophy" id="philosophy">
-  <span class="section-eyebrow fade-in">PHILOSOPHY</span>
-  <p class="philosophy-text fade-in" data-en="To you, from the deepest place.">もっと奥底のあなたへ。</p>
-</section>
+<!-- ==================== PHILOSOPHY + PROCESS (共通画像背景) ==================== -->
+<div class="content-bg-area">
+  <div id="page-image-bg" aria-hidden="true">
+    <div class="page-slide page-slide--a"></div>
+    <div class="page-slide page-slide--b"></div>
+  </div>
 
+  <section class="s-philosophy" id="philosophy">
+    <span class="section-eyebrow fade-in">PHILOSOPHY</span>
+    <p class="philosophy-text fade-in" data-en="To you, from the deepest place.">もっと奥底のあなたへ。</p>
+  </section>
 
-<!-- ==================== PROCESS ==================== -->
-<section class="s-process" id="process">
+  <section class="s-process" id="process">
   <span class="section-eyebrow fade-in">PROCESS</span>
   <div class="process-grid">
 
@@ -109,7 +107,9 @@
     </div>
 
   </div>
-</section>
+  </section>
+
+</div><!-- /.content-bg-area -->
 
 <!-- ==================== WAITING LIST FORM ==================== -->
 <section class="s-form" id="waitinglist">
