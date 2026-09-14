@@ -17,7 +17,7 @@
   setInterval(() => {
     current = (current + 1) % videos.length;
     playVideo(current);
-  }, 3000);
+  }, 4000);
 })();
 
 /* ── Section image slideshow ── */
