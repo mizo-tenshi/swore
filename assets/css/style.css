@@ -219,29 +219,44 @@ section {
   opacity: 0.22;
 }
 
-/* セクション画像背景 */
-.section-bg {
+/* ページ全体の固定画像背景 */
+#page-image-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-slide {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.11;
-  transition: opacity 1.5s ease;
-  z-index: 0;
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.page-slide.active { opacity: 0.13; }
+
+/* セクションを固定背景の上に重ねる */
+#site-header { z-index: 200; }
+
+.s-hero {
+  z-index: 2;
+  background: transparent;
 }
 
 .s-philosophy,
 .s-process,
 .s-form {
   position: relative;
-  overflow: hidden;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.84);
 }
 
-.s-philosophy > *:not(.section-bg),
-.s-process > *:not(.section-bg),
-.s-form > *:not(.section-bg) {
+#site-footer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-inner {

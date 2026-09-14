@@ -20,35 +20,37 @@
   }, 4000);
 })();
 
-/* ── Section image slideshow ── */
+/* ── Page-wide image background (A/B crossfade) ── */
 (function () {
   const slides = [
-    'IMG_5561.JPG','IMG_5562.JPG','IMG_5563.JPG','IMG_5564.JPG','IMG_5565.JPG',
-    'IMG_5566.JPG','IMG_5567.JPG','IMG_5568.JPG','IMG_5569.JPG','IMG_5570.JPG',
-    'IMG_5571.JPG','IMG_5573.JPG','IMG_5574.JPG','IMG_5575.JPG','IMG_5576.JPG',
-    'IMG_5577.JPG','IMG_5578.JPG','IMG_5580.JPG','IMG_5581.JPG','IMG_5582.JPG',
-    'IMG_5583.JPG','IMG_5584.JPG','IMG_5585.JPG','IMG_5587.JPG','IMG_5588.JPG',
-    'IMG_5589.JPG','IMG_5590.JPG','IMG_5591.JPG','IMG_5592.JPG','IMG_5593.JPG'
+    'IMG_5561.JPG','IMG_5564.JPG','IMG_5565.JPG','IMG_5571.JPG','IMG_5573.JPG',
+    'IMG_5577.JPG','IMG_5578.JPG','IMG_5582.JPG','IMG_5583.JPG','IMG_5590.JPG'
   ];
-  const sectionBgs = document.querySelectorAll('.section-bg');
-  if (!sectionBgs.length) return;
+  const slA = document.querySelector('.page-slide--a');
+  const slB = document.querySelector('.page-slide--b');
+  if (!slA || !slB) return;
 
   let current = 0;
+  let useA = true;
 
-  function updateBg() {
-    const url = `assets/images/slides/${slides[current]}`;
-    sectionBgs.forEach(el => {
-      el.style.opacity = '0';
-      setTimeout(() => {
-        el.style.backgroundImage = `url('${url}')`;
-        el.style.opacity = '0.11';
-      }, 1200);
-    });
+  function next() {
+    const url = `url('assets/images/slides/${slides[current]}')`;
     current = (current + 1) % slides.length;
+
+    if (useA) {
+      slA.style.backgroundImage = url;
+      slA.classList.add('active');
+      slB.classList.remove('active');
+    } else {
+      slB.style.backgroundImage = url;
+      slB.classList.add('active');
+      slA.classList.remove('active');
+    }
+    useA = !useA;
   }
 
-  updateBg();
-  setInterval(updateBg, 5000);
+  next();
+  setInterval(next, 8000);
 })();
 
 /* ── Scroll fade-in ── */
