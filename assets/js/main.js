@@ -18,7 +18,7 @@
   setInterval(() => {
     current = (current + 1) % videos.length;
     playVideo(current);
-  }, 4000);
+  }, 5000);
 })();
 
 
