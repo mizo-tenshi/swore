@@ -558,7 +558,8 @@ section {
 
 .form-heading {
   font-family: var(--serif-ja);
-  font-size: clamp(20px, 2.4vw, 32px);
+  font-size: clamp(14px, 1.6vw, 22px);
+  white-space: nowrap;
   font-weight: 400;
   letter-spacing: 0.2em;
   line-height: 1.8;
