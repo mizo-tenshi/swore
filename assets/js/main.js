@@ -5,11 +5,19 @@
 
   let current = 0;
 
+  videos.forEach(v => {
+    v.addEventListener('canplay', () => { v.playbackRate = 0.5; });
+    v.addEventListener('play',    () => { v.playbackRate = 0.5; });
+    v.addEventListener('playing', () => { v.playbackRate = 0.5; });
+  });
+
   function playVideo(idx) {
     videos.forEach(v => { v.classList.remove('active'); v.pause(); });
     videos[idx].currentTime = 0;
     videos[idx].playbackRate = 0.5;
-    videos[idx].play().catch(() => {});
+    videos[idx].play().then(() => {
+      videos[idx].playbackRate = 0.5;
+    }).catch(() => {});
     videos[idx].classList.add('active');
   }
 

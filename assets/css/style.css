@@ -333,7 +333,7 @@ section {
    PHILOSOPHY
 =================================================== */
 .s-philosophy {
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,30 +484,27 @@ section {
 =================================================== */
 .s-form {
   background: #F9F7F4;
+  padding: 160px 48px 200px;
 }
 
 /* 購入ボタン */
 .purchase-wrap {
-  margin-top: 40px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .wl-cta {
-  margin-top: 120px;
+  margin-top: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 56px;
 }
 
 .purchase-divider {
-  display: block;
-  width: 1px;
-  height: 64px;
-  background: var(--lite);
-  margin-bottom: 40px;
+  display: none;
 }
 
 .purchase-btn {
@@ -905,7 +902,7 @@ section {
   .process-step { padding: 36px 0; }
 
   /* Form */
-  .s-form { padding: 100px 28px; }
+  .s-form { padding: 120px 28px 160px; }
   .form-heading { margin-bottom: 56px; }
 
   /* Final CTA */
