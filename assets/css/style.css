@@ -485,14 +485,45 @@ section {
 .s-form {
   background: #F9F7F4;
   padding: 160px 48px 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.craft-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.craft-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2.4s ease;
+}
+
+.craft-slide.active {
+  opacity: 0.13;
+}
+
+.s-form > *:not(.craft-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 /* 購入ボタン */
 .purchase-wrap {
-  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.s-philosophy .purchase-wrap {
+  margin-top: auto;
+  padding-bottom: 80px;
 }
 
 .wl-cta {

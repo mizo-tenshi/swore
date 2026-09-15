@@ -1,3 +1,18 @@
+/* ── Craft photo background slideshow ── */
+(function () {
+  const slides = document.querySelectorAll('.craft-slide');
+  if (!slides.length) return;
+
+  let cur = 0;
+  slides[cur].classList.add('active');
+
+  setInterval(() => {
+    slides[cur].classList.remove('active');
+    cur = (cur + 1) % slides.length;
+    slides[cur].classList.add('active');
+  }, 3000);
+})();
+
 /* ── Hero video slideshow ── */
 (function () {
   const videos = document.querySelectorAll('#hero-video-bg .bg-video');
