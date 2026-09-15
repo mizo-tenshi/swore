@@ -776,6 +776,14 @@ section {
   color: rgba(255,255,255,0.15);
 }
 
+.footer-social a {
+  display: flex;
+  align-items: center;
+  color: rgba(255,255,255,0.4);
+  transition: color var(--transition);
+}
+.footer-social a:hover { color: rgba(255,255,255,0.85); opacity: 1; }
+
 .footer-copy {
   font-family: var(--serif-en);
   font-size: 9px;
