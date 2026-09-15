@@ -8,6 +8,7 @@
   function playVideo(idx) {
     videos.forEach(v => { v.classList.remove('active'); v.pause(); });
     videos[idx].currentTime = 0;
+    videos[idx].playbackRate = 0.5;
     videos[idx].play().catch(() => {});
     videos[idx].classList.add('active');
   }
