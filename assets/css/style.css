@@ -338,15 +338,7 @@ section {
   position: relative;
 }
 
-/* 花紋透かし */
-.s-philosophy::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('../images/logo-hero.png') center / 400px auto no-repeat;
-  opacity: 0.03;
-  pointer-events: none;
-}
+
 
 .philosophy-text {
   font-family: var(--serif-ja);
