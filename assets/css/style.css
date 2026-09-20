@@ -197,6 +197,14 @@ section {
   overflow: hidden;
 }
 
+.hero-purchase {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 /* 動画背景 */
 #hero-video-bg {
   position: absolute;
@@ -330,12 +338,12 @@ section {
 =================================================== */
 .s-philosophy {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  gap: 56px;
   position: relative;
+  padding-bottom: 80px;
 }
 
 
@@ -510,8 +518,7 @@ section {
 }
 
 .s-philosophy .purchase-wrap {
-  margin-top: auto;
-  padding-bottom: 80px;
+  align-self: end;
 }
 
 .wl-cta {
