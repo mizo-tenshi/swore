@@ -197,13 +197,6 @@ section {
   overflow: hidden;
 }
 
-.hero-purchase {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
 
 /* 動画背景 */
 #hero-video-bg {
