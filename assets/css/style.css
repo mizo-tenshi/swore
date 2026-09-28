@@ -351,6 +351,72 @@ section {
 }
 
 /* ===================================================
+   PHILOSOPHY SECTION
+=================================================== */
+#philosophy {
+  scroll-margin-top: 72px;
+}
+
+.phil-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.phil-block + .phil-block {
+  margin-top: 120px;
+}
+
+.phil-block--rev .phil-img-wrap {
+  order: 2;
+}
+
+.phil-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #F0EDE8;
+  overflow: hidden;
+}
+
+.phil-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phil-heading {
+  font-family: var(--serif-ja);
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 36px;
+}
+
+.phil-body p {
+  font-family: var(--serif-ja);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2.6;
+  color: var(--sub);
+  margin-bottom: 4px;
+}
+
+.phil-body p:last-child {
+  margin-bottom: 0;
+}
+
+.phil-text .purchase-btn {
+  margin-top: 52px;
+}
+
+/* ===================================================
    THE CRAFT
 =================================================== */
 .s-craft {
@@ -903,6 +969,14 @@ section {
   /* Philosophy */
   .s-philosophy { min-height: auto; padding: 100px 28px; }
   .philosophy-text { font-size: clamp(20px, 5.5vw, 32px); letter-spacing: 0.14em; }
+
+  /* Philosophy section (new) */
+  .phil-block {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .phil-block + .phil-block { margin-top: 80px; }
+  .phil-block--rev .phil-img-wrap { order: 0; }
 
   /* Craft */
   .s-craft { padding: 100px 28px; }
