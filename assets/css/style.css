@@ -1399,3 +1399,21 @@ section {
   .biz-step-num { min-width: 24px; }
   .biz-step-sep { display: none; }
 }
+
+/* ── Leftover SVG piece animations ── */
+.lo-garment,
+.lo-waste {
+  opacity: 0;
+}
+.leftover-visual.visible .lo-garment {
+  opacity: 1;
+  transition: opacity 0.8s ease var(--lo-delay, 0s);
+}
+.leftover-visual.visible .lo-waste {
+  opacity: 0.28;
+  transition: opacity 1.0s ease 1.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lo-garment { opacity: 1; transition: none; }
+  .lo-waste   { opacity: 0.28; transition: none; }
+}
