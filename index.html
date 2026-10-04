@@ -26,7 +26,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=10">
+  <link rel="stylesheet" href="assets/css/style.css?v=11">
 </head>
 <body>
 
@@ -37,8 +37,8 @@
       <img src="assets/images/logo-hero.png" alt="SWOЯE" width="52" height="52">
     </a>
     <nav class="header-nav" id="header-nav" aria-label="メインナビゲーション">
-      <a href="#philosophy" data-en="PHILOSOPHY">PHILOSOPHY</a>
-      <a href="#business" data-en="BUSINESS">BUSINESS</a>
+      <a href="#apparel" data-en="PHILOSOPHY">PHILOSOPHY</a>
+      <a href="#apparel" data-en="BUSINESS">BUSINESS</a>
       <a href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer" data-en="SHOP">SHOP</a>
       <a href="https://www.instagram.com/swore_official" target="_blank" rel="noopener noreferrer" data-en="INSTAGRAM">INSTAGRAM</a>
     </nav>
@@ -77,18 +77,49 @@
 </section>
 
 
-<!-- ==================== PHILOSOPHY ==================== -->
-<section id="philosophy">
-  <h2 class="section-eyebrow fade-in" data-en="PHILOSOPHY">PHILOSOPHY</h2>
+<!-- ==================== OVERVIEW ==================== -->
+<div class="overview-wrap" id="overview">
+  <div class="biz-tan-wrap fade-in">
+    <p class="biz-tan-header" data-en="1 roll (approx. 27m × 1.5m)">一反（約27m × 1.5m）</p>
+    <svg class="biz-tan-svg" viewBox="0 0 560 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <rect x="0" y="0" width="560" height="28" fill="#D4CFC9" rx="1"/>
+      <rect class="biz-tan-70" x="0" y="0" width="392" height="28" fill="#1A1A1A" rx="1"/>
+      <line class="biz-tan-divider" x1="392" y1="0" x2="392" y2="28" stroke="#FFFFFF" stroke-width="1.5"/>
+    </svg>
+    <div class="biz-tan-labels">
+      <div class="biz-tan-lbl-70">
+        <span class="biz-tan-pct">70%</span>
+        <span class="biz-tan-name" data-en="Apparel">アパレル事業</span>
+      </div>
+      <div class="biz-tan-lbl-30">
+        <span class="biz-tan-pct biz-tan-pct--faint">30%</span>
+        <span class="biz-tan-name biz-tan-name--faint" data-en="Loopwheel Reuse">吊り編みリユース事業</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- 1. 吊り編み機 -->
+<!-- ==================== APPAREL ==================== -->
+<section id="apparel">
+  <div class="biz-section-divider"></div>
+  <h2 class="biz-section-heading fade-in" data-en="Apparel">アパレル事業</h2>
+  <p class="biz-section-subtitle fade-in" data-en="One garment, for a lifetime.">一生に、一着。</p>
+  <div class="biz-section-lead fade-in">
+    <div class="phil-body">
+      <p data-en="We use only fabric knit slowly, without haste, on looms over a century old.">百年以上前の吊り編み機で、急がず、時間をかけて編み上げた生地だけを使っています。</p>
+      <p data-en="Each piece is then sewn, one at a time, by craftspeople at a factory in Japan.">その生地を、日本の縫製工場の職人が一着ずつ仕立てます。</p>
+      <p data-en="Because we can only make so many, we offer them exclusively to those on our waiting list.">生産できる数には限りがあるため、ウェイティングリストにご登録いただいた方にのみご案内しています。</p>
+    </div>
+  </div>
+
+  <!-- 吊り編み機 -->
   <div class="phil-block" id="tsuriami">
     <div class="phil-img-wrap fade-in">
       <img src="assets/images/tsuriami.jpg" alt="吊り編み機" width="720" height="900" loading="lazy">
     </div>
     <div class="phil-text">
       <h3 class="phil-heading fade-in" data-en="The Hundred-Year-Old Loom">百年以上前の編み機</h3>
-      <div class="phil-body fade-in"><!-- 仮テキスト：要差し替え -->
+      <div class="phil-body fade-in">
         <p data-en="The tsuriami (loopwheel) knitting machine has been in use for over a hundred years.">吊り編み機は、百年以上前から使われてきた編み機です。</p>
         <p data-en="Unlike modern circular knitting machines, the fabric hangs freely as it is knitted, placing almost no tension on the yarn.">現在主流の丸編み機と異なり、生地を吊り下げながら編むため、糸に余計なテンションがかかりません。</p>
         <p data-en="Where a conventional knitting machine produces dozens of meters per hour, the loopwheel loom produces just one. That slowness is what gives the fabric its softness, fullness, and air.">従来の編み機が1時間に数十メートルを編む一方で、吊り編み機は約1メートル。その遅さが、空気を含むようなやわらかさとふくらみを生み出します。</p>
@@ -99,7 +130,7 @@
     </div>
   </div>
 
-  <!-- 2. 縫製工場 -->
+  <!-- 縫製工場 -->
   <div class="phil-block phil-block--rev" id="factory">
     <div class="phil-img-wrap fade-in">
       <img src="assets/images/factory.jpg" alt="縫製工場" width="720" height="900" loading="lazy">
@@ -114,7 +145,7 @@
     </div>
   </div>
 
-  <!-- 3. SWOЯE について -->
+  <!-- SWOЯEについて -->
   <div class="phil-block" id="about">
     <div class="phil-img-wrap fade-in">
       <img src="assets/images/about.jpg" alt="SWOЯE" width="720" height="900" loading="lazy">
@@ -127,8 +158,40 @@
       </div>
     </div>
   </div>
+</section>
 
-  <!-- 4. 残りの三割 -->
+<!-- ==================== REUSE ==================== -->
+<section id="reuse">
+  <div class="biz-section-divider"></div>
+  <h2 class="biz-section-heading fade-in" data-en="Loopwheel Reuse">吊り編みリユース事業</h2>
+  <p class="biz-section-subtitle fade-in" data-en="A second form for the other thirty percent.">残りの三割に、もう一度かたちを。</p>
+  <div class="biz-section-lead fade-in">
+    <div class="phil-body">
+      <p data-en="Of every roll, only about 70% becomes clothing. The remaining 30% has long been discarded across the industry.">一反の生地のうち、服になるのは約70%。残る約30%は、業界ではそのまま捨てられてきました。</p>
+      <p data-en="This fabric was knit slowly, over time, on looms a century old, and we could not bring ourselves to let it go.">百年前の編み機が時間をかけて編んだこの生地を、私たちは手放すことができませんでした。</p>
+      <p data-en="Loopwheel Reuse is our work of giving the fabric left after cutting a new form, and bringing it to you.">吊り編みリユース事業は、裁断のあとに残る生地を活かし、新たなかたちにしてお届けする私たちの取り組みです。</p>
+    </div>
+  </div>
+
+  <!-- 流れ図 -->
+  <div class="biz-steps biz-steps--centered fade-in">
+    <div class="biz-step">
+      <span class="biz-step-num">01</span>
+      <span class="biz-step-label" data-en="Cutting">裁断</span>
+    </div>
+    <span class="biz-step-sep" aria-hidden="true">→</span>
+    <div class="biz-step">
+      <span class="biz-step-num">02</span>
+      <span class="biz-step-label" data-en="The remaining 30% of fabric">残る30%の生地</span>
+    </div>
+    <span class="biz-step-sep" aria-hidden="true">→</span>
+    <div class="biz-step">
+      <span class="biz-step-num">03</span>
+      <span class="biz-step-label" data-en="Into a new form">新たなかたちへ</span>
+    </div>
+  </div>
+
+  <!-- 残りの三割 -->
   <div class="leftover-block" id="leftover">
     <h3 class="phil-heading fade-in" data-en="The Other Thirty Percent">残りの三割</h3>
     <div class="phil-body fade-in">
@@ -139,13 +202,8 @@
       <p data-en="So we have begun breathing new life into fabric that would otherwise be discarded.">だから私たちは、捨てられるはずの生地にもう一度命を吹き込むことを始めています。</p>
     </div>
     <div class="leftover-visual fade-in">
-      <!-- 端切れ写真（準備できたらコメントアウトを外してください）
-      <img class="leftover-photo" src="assets/images/leftover.jpg" alt="端切れ生地" width="1200" height="800" loading="lazy">
-      -->
       <svg class="leftover-svg" viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- 生地全体（濃色 = 残る30%） -->
         <rect x="0" y="0" width="560" height="180" fill="#888888" rx="2"/>
-        <!-- 裁断パーツ（淡色 = 服になる70%） -->
         <polygon points="20,10 162,10 162,168 38,168 20,135" fill="#F0EDE8"/>
         <polygon points="174,10 208,10 212,105 170,105" fill="#F0EDE8"/>
         <polygon points="214,10 246,10 250,105 210,105" fill="#F0EDE8"/>
@@ -165,102 +223,12 @@
       </div>
     </div>
   </div>
-
-  <div class="phil-cta fade-in">
-    <a class="purchase-btn" href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer" data-en="Purchase">購入する</a>
-  </div>
 </section>
 
-<!-- ==================== BUSINESS ==================== -->
-<section id="business">
-  <h2 class="section-eyebrow fade-in" data-en="What We Do">事業</h2>
-
-  <!-- 図1: 一反 → 70% アパレル / 30% ЯEMNANT -->
-  <div class="biz-tan-wrap fade-in">
-    <p class="biz-tan-header" data-en="1 TAN (approx. 27m × 1.5m)">一反（約27m × 1.5m）</p>
-    <svg class="biz-tan-svg" viewBox="0 0 560 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <rect x="0" y="0" width="560" height="28" fill="#D4CFC9" rx="1"/>
-      <rect class="biz-tan-70" x="0" y="0" width="392" height="28" fill="#1A1A1A" rx="1"/>
-      <line class="biz-tan-divider" x1="392" y1="0" x2="392" y2="28" stroke="#FFFFFF" stroke-width="1.5"/>
-    </svg>
-    <div class="biz-tan-labels">
-      <div class="biz-tan-lbl-70">
-        <span class="biz-tan-pct">70%</span>
-        <span class="biz-tan-name" data-en="Apparel">アパレル事業</span>
-      </div>
-      <div class="biz-tan-lbl-30">
-        <span class="biz-tan-pct biz-tan-pct--faint">30%</span>
-        <span class="biz-tan-name biz-tan-name--faint" data-en="ЯEMNANT">ЯEMNANT事業</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2事業グリッド -->
-  <div class="biz-grid">
-
-    <!-- アパレル事業 -->
-    <div class="biz-block">
-      <h3 class="biz-heading fade-in" data-en="Apparel">アパレル事業</h3>
-      <p class="biz-subtitle fade-in" data-en="One garment, for a lifetime.">一生に、一着。</p>
-      <div class="phil-body fade-in">
-        <p data-en="We use only fabric knit slowly, without haste, on looms over a century old.">百年以上前の吊り編み機で、急がず、時間をかけて編み上げた生地だけを使っています。</p>
-        <p data-en="Each piece is then sewn by hand, one at a time, by craftspeople at a factory in Japan.">その生地を、日本の縫製工場の職人が一着ずつ仕立てます。</p>
-        <p data-en="Because we can only make so many, we offer them exclusively to those on our waiting list.">生産できる数には限りがあるため、ウェイティングリストにご登録いただいた方にのみご案内しています。</p>
-      </div>
-      <!-- 図2: アパレル事業の流れ -->
-      <div class="biz-steps fade-in">
-        <div class="biz-step">
-          <span class="biz-step-num">01</span>
-          <span class="biz-step-label" data-en="Knit on the loopwheel loom">吊り編み機で編む</span>
-        </div>
-        <span class="biz-step-sep" aria-hidden="true">→</span>
-        <div class="biz-step">
-          <span class="biz-step-num">02</span>
-          <span class="biz-step-label" data-en="Sewn by craftspeople">縫製工場で仕立てる</span>
-        </div>
-        <span class="biz-step-sep" aria-hidden="true">→</span>
-        <div class="biz-step">
-          <span class="biz-step-num">03</span>
-          <span class="biz-step-label" data-en="To you">あなたへ</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ЯEMNANT事業 -->
-    <div class="biz-block">
-      <h3 class="biz-heading fade-in" data-en="ЯEMNANT">ЯEMNANT事業</h3>
-      <p class="biz-subtitle fade-in" data-en="A second form for the other thirty percent.">残りの三割に、もう一度かたちを。</p>
-      <div class="phil-body fade-in">
-        <p data-en="Of every roll, only about 70% becomes clothing. The remaining 30% has long been discarded across the industry.">一反の生地のうち、服になるのは約70%。残る約30%は、業界ではそのまま捨てられてきました。</p>
-        <p data-en="This fabric was knit slowly, over time, and we could not bring ourselves to let it go.">時間をかけて編まれたこの生地を、私たちは手放すことができませんでした。</p>
-        <p data-en="ЯEMNANT (remnant) is our work of making something new from what remains after cutting.">ЯEMNANT（レムナント）は、裁断のあとに残る生地から、新たなものを生み出す私たちの取り組みです。</p>
-      </div>
-      <!-- 図3: ЯEMNANT事業の流れ -->
-      <div class="biz-steps fade-in">
-        <div class="biz-step">
-          <span class="biz-step-num">01</span>
-          <span class="biz-step-label" data-en="Cutting">裁断</span>
-        </div>
-        <span class="biz-step-sep" aria-hidden="true">→</span>
-        <div class="biz-step">
-          <span class="biz-step-num">02</span>
-          <span class="biz-step-label" data-en="The remaining 30% of fabric">残る30%の生地</span>
-        </div>
-        <span class="biz-step-sep" aria-hidden="true">→</span>
-        <div class="biz-step">
-          <span class="biz-step-num">03</span>
-          <span class="biz-step-label" data-en="Into a new form">新たなかたちへ</span>
-        </div>
-      </div>
-      <a class="biz-story-link fade-in" href="#leftover" data-en="Read the story →">物語を読む →</a>
-    </div>
-
-  </div>
-
-  <div class="phil-cta fade-in">
-    <a class="purchase-btn" href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer" data-en="Purchase">購入する</a>
-  </div>
-</section>
+<!-- ==================== PAGE CTA ==================== -->
+<div class="page-cta fade-in">
+  <a class="purchase-btn" href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer" data-en="Purchase">購入する</a>
+</div>
 
 <!-- ==================== FOOTER ==================== -->
 <footer id="site-footer">

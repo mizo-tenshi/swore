@@ -504,10 +504,64 @@ section {
 }
 
 /* ===================================================
-   BUSINESS SECTION
+   OVERVIEW / APPAREL / REUSE SECTIONS
 =================================================== */
-#business {
+
+/* 全体図ラッパー（section外） */
+.overview-wrap {
+  padding: 120px 64px 0;
+}
+
+/* セクション共通 */
+#apparel,
+#reuse {
   scroll-margin-top: 72px;
+}
+
+/* アパレル事業：overviewの直後なのでtop paddingを短縮 */
+#apparel {
+  padding-top: 80px;
+}
+
+/* 事業区切り線 */
+.biz-section-divider {
+  max-width: 1100px;
+  margin: 0 auto 64px;
+  border-top: 1px solid var(--lite);
+}
+
+/* 事業見出し h2 */
+.biz-section-heading {
+  font-family: var(--serif-ja);
+  font-size: clamp(14px, 1.6vw, 20px);
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+/* 事業副題 */
+.biz-section-subtitle {
+  font-family: var(--serif-ja);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.9;
+  color: var(--sub);
+  margin-bottom: 48px;
+}
+
+/* 事業リード文 */
+.biz-section-lead {
+  max-width: 600px;
+  margin: 0 auto 100px;
+}
+
+/* ページ下部 CTA（section外） */
+.page-cta {
+  padding: 80px 64px 120px;
+  text-align: center;
 }
 
 .biz-tan-wrap {
@@ -693,6 +747,25 @@ section {
   color: var(--ink);
   border-color: var(--ink);
   opacity: 1;
+}
+
+/* 流れ図：#reuseセクション内で中央配置 */
+.biz-steps--centered {
+  max-width: 640px;
+  margin: 0 auto 100px;
+  border-top: 1px solid var(--lite);
+  border-bottom: 1px solid var(--lite);
+  padding: 36px 0;
+  margin-top: 0;
+}
+
+/* leftoverブロックの本文：中央寄せ＋折り返し保証 */
+.leftover-block .phil-body {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  text-align: center;
 }
 
 /* ===================================================
@@ -1261,7 +1334,15 @@ section {
   .leftover-block { margin-top: 80px; }
   .phil-cta { margin-top: 56px; }
 
-  /* Business */
+  /* Overview / Apparel / Reuse */
+  .overview-wrap { padding: 80px 28px 0; }
+  #apparel { padding-top: 60px; }
+  .biz-section-divider { margin-bottom: 48px; }
+  .biz-section-lead { margin-bottom: 72px; }
+  .biz-steps--centered { margin-bottom: 72px; }
+  .page-cta { padding: 40px 28px 80px; }
+
+  /* (旧) Business grid — 残存要素のフォールバック */
   .biz-grid {
     grid-template-columns: 1fr;
     gap: 72px;
