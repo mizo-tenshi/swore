@@ -533,7 +533,7 @@ section {
 /* 事業見出し h2 */
 .biz-section-heading {
   font-family: var(--serif-ja);
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.28em;
   line-height: 1.7;
@@ -643,7 +643,7 @@ section {
 
 .biz-tan-name {
   font-family: var(--serif-ja);
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 0.22em;
   color: var(--ink);
 }
