@@ -405,10 +405,10 @@ section {
   font-family: var(--serif-ja);
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 2.6;
-  color: var(--sub);
-  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+  line-height: 2.0;
+  color: #595959;
+  margin-bottom: 0.8em;
 }
 
 .phil-body p:last-child {
@@ -501,6 +501,198 @@ section {
 .leftover-block .phil-body {
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* ===================================================
+   BUSINESS SECTION
+=================================================== */
+#business {
+  scroll-margin-top: 72px;
+}
+
+.biz-tan-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.biz-tan-header {
+  font-family: var(--serif-en);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--sub);
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.biz-tan-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.biz-tan-70 {
+  transform-box: fill-box;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s;
+}
+
+.biz-tan-wrap.visible .biz-tan-70 {
+  transform: scaleX(1);
+}
+
+.biz-tan-divider {
+  opacity: 0;
+  transition: opacity 0.8s ease 2.0s;
+}
+
+.biz-tan-wrap.visible .biz-tan-divider {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .biz-tan-70 { transform: scaleX(1); transition: none; }
+  .biz-tan-divider { opacity: 1; transition: none; }
+}
+
+.biz-tan-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.biz-tan-lbl-70,
+.biz-tan-lbl-30 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.biz-tan-lbl-30 {
+  align-items: flex-end;
+}
+
+.biz-tan-pct {
+  font-family: var(--serif-en);
+  font-size: clamp(22px, 2.8vw, 36px);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.biz-tan-pct--faint {
+  color: var(--sub);
+}
+
+.biz-tan-name {
+  font-family: var(--serif-ja);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--ink);
+}
+
+.biz-tan-name--faint {
+  color: var(--sub);
+}
+
+.biz-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 100px auto 0;
+  text-align: left;
+}
+
+.biz-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.biz-heading {
+  font-family: var(--serif-ja);
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.biz-subtitle {
+  font-family: var(--serif-ja);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.9;
+  color: var(--sub);
+  margin-bottom: 32px;
+}
+
+.biz-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--lite);
+}
+
+.biz-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.biz-step-num {
+  font-family: var(--serif-en);
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: var(--sub);
+}
+
+.biz-step-label {
+  font-family: var(--serif-ja);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 1.9;
+  color: var(--ink);
+}
+
+.biz-step-sep {
+  flex: 0 0 20px;
+  font-family: var(--serif-en);
+  font-size: 10px;
+  color: #C8C2BA;
+  align-self: flex-start;
+  padding-top: 2px;
+}
+
+.biz-story-link {
+  display: inline-block;
+  font-family: var(--serif-en);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--sub);
+  margin-top: 28px;
+  border-bottom: 1px solid var(--lite);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.biz-story-link:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+  opacity: 1;
 }
 
 /* ===================================================
@@ -1069,6 +1261,13 @@ section {
   .leftover-block { margin-top: 80px; }
   .phil-cta { margin-top: 56px; }
 
+  /* Business */
+  .biz-grid {
+    grid-template-columns: 1fr;
+    gap: 72px;
+    margin-top: 72px;
+  }
+
   /* Craft */
   .s-craft { padding: 100px 28px; }
   .craft-grid {
@@ -1102,4 +1301,20 @@ section {
   .footer-nav { gap: 20px; }
   .footer-legal { flex-direction: column; gap: 10px; }
   .footer-sep { display: none; }
+}
+
+@media (max-width: 480px) {
+  .biz-steps {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .biz-step {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 16px;
+  }
+  .biz-step-num { min-width: 24px; }
+  .biz-step-sep { display: none; }
 }
