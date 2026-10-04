@@ -427,19 +427,15 @@ section {
 /* ===================================================
    LEFTOVER SECTION
 =================================================== */
-.phil-block--rev .leftover-visual {
-  order: 2;
+.leftover-block {
+  max-width: 880px;
+  margin: 120px auto 0;
 }
 
 .leftover-visual {
-  position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  background: #F9F7F4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px;
+  position: relative;
+  margin-bottom: 48px;
 }
 
 .leftover-photo {
@@ -450,34 +446,17 @@ section {
   object-fit: cover;
 }
 
-.leftover-diagram {
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
 .leftover-svg {
   width: 100%;
   height: auto;
   display: block;
-  overflow: visible;
-}
-
-.bar-leftover,
-.leftover-divider {
-  opacity: 0;
-  transition: opacity 1.4s ease 0.5s;
-}
-
-.leftover-visual.visible .bar-leftover,
-.leftover-visual.visible .leftover-divider {
-  opacity: 1;
+  border-radius: 2px;
 }
 
 .leftover-labels {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .leftover-lbl-70,
@@ -490,7 +469,7 @@ section {
 .leftover-lbl-30 {
   align-items: flex-end;
   opacity: 0;
-  transition: opacity 1.4s ease 0.7s;
+  transition: opacity 1.4s ease 0.8s;
 }
 
 .leftover-visual.visible .leftover-lbl-30 {
@@ -508,7 +487,7 @@ section {
 
 .leftover-pct {
   font-family: var(--serif-en);
-  font-size: clamp(28px, 3.5vw, 44px);
+  font-size: clamp(24px, 3vw, 40px);
   font-weight: 300;
   letter-spacing: 0.04em;
   color: var(--ink);
@@ -516,7 +495,12 @@ section {
 }
 
 .leftover-pct--faint {
-  color: #C8C2BA;
+  color: #888888;
+}
+
+.leftover-block .phil-body {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* ===================================================
@@ -1082,7 +1066,7 @@ section {
   .phil-block--rev .phil-img-wrap { order: 0; }
   .phil-block--rev .leftover-visual { order: 0; }
   .phil-img-wrap { height: 420px; }
-  .leftover-visual { height: 320px; padding: 32px; }
+  .leftover-block { margin-top: 80px; }
   .phil-cta { margin-top: 56px; }
 
   /* Craft */
