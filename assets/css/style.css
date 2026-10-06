@@ -421,7 +421,7 @@ section {
 
 /* Philosophy — final CTA */
 .phil-cta {
-  margin-top: 80px;
+  margin-top: 160px;
 }
 
 /* ===================================================
@@ -508,7 +508,7 @@ section {
 
 /* 全体図ラッパー（section外） */
 .overview-wrap {
-  padding: 120px 64px 0;
+  padding: 120px 64px 120px;
 }
 
 /* セクション共通 */
@@ -1331,10 +1331,10 @@ section {
   .phil-block--rev .leftover-visual { order: 0; }
   .phil-img-wrap { height: 420px; }
   .leftover-block { margin-top: 80px; }
-  .phil-cta { margin-top: 56px; }
+  .phil-cta { margin-top: 100px; }
 
   /* Overview / Apparel / Reuse */
-  .overview-wrap { padding: 80px 28px 0; }
+  .overview-wrap { padding: 80px 28px 80px; }
   #apparel { padding-top: 60px; }
   .biz-section-divider { margin-bottom: 48px; }
   .biz-section-lead { margin-bottom: 72px; }
