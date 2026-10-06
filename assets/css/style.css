@@ -403,7 +403,7 @@ section {
 
 .phil-body p {
   font-family: var(--serif-ja);
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 2.0;
@@ -646,7 +646,7 @@ section {
 
 .biz-tan-name {
   font-family: var(--serif-ja);
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 0.22em;
   color: var(--ink);
 }
