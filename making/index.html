@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>製作の記録 — SWOЯE</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="百年前の吊り編み機と職人の手で、あなたの一着が生まれるまでの記録。">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swore.jp/making/">
+  <meta property="og:title" content="製作の記録 — SWOЯE">
+  <meta property="og:description" content="百年前の吊り編み機と職人の手で、あなたの一着が生まれるまでの記録。">
+  <meta property="og:image" content="https://swore.jp/assets/images/making-poster.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Shippori+Mincho:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="../assets/css/style.css?v=14">
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ── Making page layout ── */
+    .making-main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 120px 24px 80px; /* 72px header + 48px breathing */
+      text-align: center;
+    }
+
+    .making-heading {
+      font-family: var(--serif-ja);
+      font-size: clamp(18px, 4.5vw, 26px);
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      color: var(--ink);
+      margin-bottom: 48px;
+    }
+
+    /* ── Video area ── */
+    .making-video-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #C8C4BE; /* placeholder color while no video */
+      margin-bottom: 48px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .making-video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      background: #1A1A1A;
+    }
+
+    .making-embed-wrap {
+      position: absolute;
+      inset: 0;
+    }
+
+    .making-embed-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ── Body text ── */
+    .making-body {
+      margin-bottom: 56px;
+    }
+
+    .making-body p {
+      font-family: var(--serif-ja);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      line-height: 2.4;
+      color: #595959;
+    }
+
+    /* ── CTA group ── */
+    .making-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .making-link {
+      font-family: var(--serif-ja);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      color: var(--sub);
+      border-bottom: 1px solid var(--lite);
+      padding-bottom: 2px;
+      transition: color var(--transition), border-color var(--transition);
+    }
+    .making-link:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+      opacity: 1;
+    }
+
+    /* ── Mobile adjustments ── */
+    @media (max-width: 768px) {
+      .making-main {
+        padding-top: 100px; /* 60px header + 40px breathing */
+      }
+    }
+
+    /* ── Desktop: a little more room ── */
+    @media (min-width: 769px) {
+      .making-main {
+        padding: 140px 48px 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="header-logo" href="../" aria-label="SWOЯE — トップページへ">
+      <img src="../assets/images/logo-hero.png" alt="SWOЯE" width="52" height="52">
+    </a>
+    <div class="header-right" style="margin-left:auto">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="言語切替 / Switch Language">
+        <span class="lang-opt active" id="opt-ja">JP</span>
+        <span class="lang-sep">·</span>
+        <span class="lang-opt" id="opt-en">EN</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== MAIN ==================== -->
+<main class="making-main">
+
+  <h1 class="making-heading fade-in" data-en="The Making">製作の記録</h1>
+
+  <!-- ════════════════════════════════════════════════════════════
+       動画の設定はここだけを編集してください
+       ────────────────────────────────────────────────────────────
+       data-type="local"   → assets/videos/making.mp4 を使用
+       data-type="youtube" → data-youtube-id に YouTube の動画ID
+       data-type="vimeo"   → data-vimeo-id   に Vimeo  の動画ID
+       ════════════════════════════════════════════════════════════ -->
+  <div id="making-video-wrap" class="making-video-wrap fade-in"
+       data-type="local"
+       data-src="../assets/videos/making.mp4"
+       data-poster="../assets/images/making-poster.jpg"
+       data-youtube-id=""
+       data-vimeo-id="">
+  </div>
+
+  <div class="making-body fade-in">
+    <p data-en="A century-old loopwheel machine knits just ten metres of fabric a day,&lt;br&gt;and craftspeople sew each garment, one at a time.&lt;br&gt;This is the time it takes for yours to come into being.">
+      百年前の吊り編み機が、一日にわずか十メートルの生地を編み上げ、<br>
+      職人の手で、一着ずつ仕立てられていく。<br>
+      あなたの一着が生まれるまでの時間を、ご覧ください。
+    </p>
+  </div>
+
+  <div class="making-cta-group fade-in">
+    <a class="making-link" href="https://swore.jp/" data-en="About SWOЯE">SWOЯEについて</a>
+    <a class="purchase-btn" href="https://sworeofficial.com" target="_blank" rel="noopener noreferrer" data-en="Purchase">購入する</a>
+  </div>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <a href="../" class="footer-logo-link" aria-label="SWOЯE — トップページへ">
+      <img src="../assets/images/logo-hero.png" alt="SWOЯE" width="56" height="56" loading="lazy">
+    </a>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/swore_official" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-legal">
+      <a href="../privacy.html" data-en="Privacy Policy">プライバシーポリシー</a>
+      <span class="footer-sep">|</span>
+      <a href="../tokushoho.html" data-en="Specified Commercial Transactions Act">特定商取引法に基づく表記</a>
+      <span class="footer-sep">|</span>
+      <a href="mailto:info@swore.jp">info@swore.jp</a>
+    </div>
+    <p class="footer-copy">© 2026 SWO&#1071;E. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+/* ── Video rendering ── */
+(function () {
+  const wrap = document.getElementById('making-video-wrap');
+  const d    = wrap.dataset;
+
+  if (d.type === 'local') {
+    const v = document.createElement('video');
+    v.className = 'making-video';
+    if (d.src)    v.src    = d.src;
+    if (d.poster) v.poster = d.poster;
+    v.controls    = true;
+    v.preload     = 'metadata';
+    v.setAttribute('playsinline', '');
+    wrap.appendChild(v);
+
+  } else if (d.type === 'youtube' && d.youtubeId) {
+    const ew = document.createElement('div');
+    ew.className = 'making-embed-wrap';
+    ew.innerHTML =
+      '<iframe src="https://www.youtube-nocookie.com/embed/' + d.youtubeId +
+      '?playsinline=1&rel=0" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+    wrap.appendChild(ew);
+
+  } else if (d.type === 'vimeo' && d.vimeoId) {
+    const ew = document.createElement('div');
+    ew.className = 'making-embed-wrap';
+    ew.innerHTML =
+      '<iframe src="https://player.vimeo.com/video/' + d.vimeoId +
+      '?byline=0&portrait=0&dnt=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+    wrap.appendChild(ew);
+  }
+  /* type設定なし or IDなし → CSSの背景色がplaceholderとして機能 */
+})();
+
+/* ── Scroll fade-in ── */
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade-in').forEach(function (el, i) {
+  el.style.transitionDelay = (i % 4) * 0.1 + 's';
+  observer.observe(el);
+});
+
+/* ── JP/EN toggle ── */
+/* ブラウザ言語が日本語以外の場合はENを初期表示 */
+var currentLang = localStorage.getItem('swore-lang') ||
+  (navigator.language && navigator.language.startsWith('ja') ? 'ja' : 'en');
+
+function applyLang(lang) {
+  document.documentElement.lang = lang === 'en' ? 'en' : 'ja';
+
+  document.querySelectorAll('[data-en]').forEach(function (el) {
+    if (lang === 'en') {
+      if (!el.dataset.ja) el.dataset.ja = el.innerHTML;
+      el.innerHTML = el.dataset.en;
+    } else {
+      if (el.dataset.ja) el.innerHTML = el.dataset.ja;
+    }
+  });
+
+  var optJa = document.getElementById('opt-ja');
+  var optEn = document.getElementById('opt-en');
+  if (optJa) optJa.classList.toggle('active', lang === 'ja');
+  if (optEn) optEn.classList.toggle('active', lang === 'en');
+
+  localStorage.setItem('swore-lang', lang);
+  currentLang = lang;
+}
+
+var langBtn = document.getElementById('lang-toggle');
+if (langBtn) {
+  langBtn.addEventListener('click', function () {
+    applyLang(currentLang === 'en' ? 'ja' : 'en');
+  });
+}
+
+if (currentLang === 'en') applyLang('en');
+</script>
+</body>
+</html>
