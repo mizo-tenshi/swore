@@ -512,7 +512,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 64px;
+  padding: 120px 0;
 }
 
 /* セクション共通 */
@@ -568,19 +568,19 @@ section {
 }
 
 .biz-tan-wrap {
-  max-width: 880px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .biz-tan-header {
   font-family: var(--serif-en);
-  font-size: 9px;
+  font-size: 27px;
   font-weight: 400;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--sub);
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 42px;
 }
 
 .biz-tan-svg {
@@ -617,14 +617,15 @@ section {
 .biz-tan-labels {
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 216px;
+  padding: 0 80px;
 }
 
 .biz-tan-lbl-70,
 .biz-tan-lbl-30 {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 72px;
 }
 
 .biz-tan-lbl-30 {
@@ -633,7 +634,7 @@ section {
 
 .biz-tan-pct {
   font-family: var(--serif-en);
-  font-size: clamp(22px, 2.8vw, 36px);
+  font-size: clamp(80px, 33.6vw, 432px);
   font-weight: 300;
   letter-spacing: 0.04em;
   color: var(--ink);
@@ -646,7 +647,7 @@ section {
 
 .biz-tan-name {
   font-family: var(--serif-ja);
-  font-size: 10px;
+  font-size: clamp(30px, 8vw, 120px);
   letter-spacing: 0.22em;
   color: var(--ink);
 }
@@ -1338,7 +1339,7 @@ section {
   .phil-cta { margin-top: 100px; }
 
   /* Overview / Apparel / Reuse */
-  .overview-wrap { min-height: 100svh; padding: 80px 28px; }
+  .overview-wrap { min-height: 100svh; padding: 80px 0; }
   #apparel { padding-top: 60px; }
   .biz-section-divider { margin-bottom: 48px; }
   .biz-section-lead { margin-bottom: 72px; }
