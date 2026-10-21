@@ -512,7 +512,34 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 80px;
   padding: 120px 0;
+}
+
+.overview-intro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 48px;
+  text-align: center;
+}
+
+.overview-intro-heading {
+  font-family: var(--serif-ja);
+  font-size: clamp(20px, 2.4vw, 30px);
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  color: var(--ink);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.overview-intro-body {
+  font-family: var(--serif-ja);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 2.4;
+  color: #595959;
 }
 
 /* セクション共通 */
